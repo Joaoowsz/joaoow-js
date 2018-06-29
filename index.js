@@ -138,7 +138,7 @@ bot.on("message", async message => {
 
 });
 
-bot.login("NDU5OTE5MDc1ODcxODE3NzI4.DhZ_jw.tsYhAC3-LC7egzAcAkzSxMncMC0");
+bot.login(process.env.BOT_TOKEN);
 //Discord.Colors = {
 //    DEFAULT: 0,
 //    AQUA: 1752220,
