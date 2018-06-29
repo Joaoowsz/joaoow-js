@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     let username = args[0];
     let platform = args[1] || "pc";
 
-    let data = ft.getInformation(username, platform).then(data => {
+    let data = ft.getInfo(username, platform).then(data => {
 
         let status = data.lifetimeStats;
         let kills = stats.find(s => s.stat == 'kills');
