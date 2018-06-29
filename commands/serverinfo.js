@@ -39,8 +39,12 @@ module.exports.run = async (bot, message, args) => {
                     "name": ":raising_hand: Usuários",
                     "value": message.guild.memberCount,
                     "inline": true
-                  }
-
+                  },
+                  {
+                  "name": ":clipboard: Data de criação",
+                  "value": message.guild.createdAt,
+                  "inline": true
+                }
               ]
             }})
         }
