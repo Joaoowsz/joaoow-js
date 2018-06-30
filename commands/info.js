@@ -6,12 +6,10 @@ module.exports.run = async (bot, message, args) => {
     let cMember = message.author.createdAt;
     let apMember = message.mentions.users.size > 0 ? message.mentions.users.first() : message.author;
     const member = message.guild.member(apMember);
-    let cMember = message.member.highestRole.name;
-    const member = message.guild.member(cMember);
 
     message.channel.send({
         "embed": {
-            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Apelido:** ${apMember}\n**Cargo mais alto:** ${cMember}`,
+            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Apelido:** ${apMember}\n**Cargo mais alto:** Discord Developer 🤖`,
             "color": 1146986,
             "timestamp": new Date(),
             "footer": {
