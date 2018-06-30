@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
                 "icon_url": null,
                 "text": "Comando por: " + message.author.username
             },
-                "thumbnail": {
+                "thumbnail": { 
                     "url": message.author.displayAvatarURL,
                 },
                 "author": {
