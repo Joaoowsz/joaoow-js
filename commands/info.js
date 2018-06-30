@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     let iMember = message.member.id;
     let cMember = message.author.createdAt;
     let apMember = message.mentions.users.size > 0 ? message.mentions.users.first() : message.author;
-    const member = message.guild.member(user);
+    const member = message.guild.member(apMember);
 
     message.channel.send({
         "embed": {
