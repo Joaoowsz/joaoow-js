@@ -11,10 +11,17 @@ module.exports.run = async (bot, message, args) => {
             "timestamp": new Date(),
             "footer": {
                 "icon_url": message.author.displayAvatarURL,
-                "text": "Comando por:" + message.author.username,
+                "text": "Comando por: " + message.author.username
+            },
+                "thumbnail": {
+                    "url": "https://cdn.discordapp.com/attachments/458045910383853569/460254575564161024/ee15ee2204940b811508b13eac92068d.jpg"
+                },
+                "author": {
+                    "name": message.author.username,
+                    "icon_url": message.author.displayAvatarURL,
+                }
             }
-        }
-    })
+        })
 
 
 
