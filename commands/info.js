@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let cMember = message.author.createdAt;
     let sMember = message.author.status;
     let aMember = message.author.activity;
-    let apMember = message.author.guild.username;
+    let apMember = message.guild.username;
 
     message.channel.send({
         "embed": {
