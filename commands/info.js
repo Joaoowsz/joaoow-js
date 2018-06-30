@@ -6,10 +6,11 @@ module.exports.run = async (bot, message, args) => {
     let cMember = message.author.createdAt;
     let sMember = message.author.status;
     let aMember = message.author.activity;
+    let apMember = message.author.nickname;
 
     message.channel.send({
         "embed": {
-            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Status:** ${sMember}\n**Atividade:** ${aMember}`,
+            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Status:** ${sMember}\n**Atividade:** ${aMember}\n\n**Apelido:** ${apMember}`,
             "color": 1146986,
             "timestamp": new Date(),
             "footer": {
