@@ -4,7 +4,6 @@ module.exports.run = async (bot, message, args) => {
 
     let iMember = message.member.id;
     let cMember = message.author.createdTimestamp;
-    let sMember = message.author.status;
 
     message.channel.send({
         "embed": {
