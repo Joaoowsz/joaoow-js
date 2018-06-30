@@ -3,14 +3,12 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
     let iMember = message.member.id;
-    let cMember = message.author.createdAt;
+    let cMember = message.author.createdTimestamp;
     let sMember = message.author.status;
-    let aMember = message.author.activity;
-    let apMember = message.guild.username;
 
     message.channel.send({
         "embed": {
-            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Status:** ${sMember}\n**Atividade:** ${aMember}\n\n**Apelido:** ${apMember}`,
+            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}`,
             "color": 1146986,
             "timestamp": new Date(),
             "footer": {
