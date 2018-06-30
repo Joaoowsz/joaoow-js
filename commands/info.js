@@ -4,21 +4,24 @@ module.exports.run = async (bot, message, args) => {
 
     let iMember = message.member.id;
     let cMember = message.author.createdAt;
+    let sMember = message.author.status;
+    let aMember = message.author.activity;
+
     message.channel.send({
         "embed": {
-            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}`,
+            "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Status:** ${sMember}\n**Atividade:** ${aMember}`,
             "color": 1146986,
             "timestamp": new Date(),
             "footer": {
-                "icon_url": message.author.displayAvatarURL,
+                "icon_url": null,
                 "text": "Comando por: " + message.author.username
             },
                 "thumbnail": {
-                    "url": "https://cdn.discordapp.com/attachments/458045910383853569/460254575564161024/ee15ee2204940b811508b13eac92068d.jpg"
+                    "url": message.author.displayAvatarURL,
                 },
                 "author": {
                     "name": message.author.username,
-                    "icon_url": message.author.displayAvatarURL,
+                    "icon_url": null,
                 }
             }
         })
