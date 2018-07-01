@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     let pMember = message.member.presence;
 
 
-    message.channel.send({
+    message.createDM().send({
         "embed": {
             "description":`**ID:** ${iMember}\n**Criado em:** ${cMember}\n\n**Apelido:** ${apMember}\n**Atividade:** ${pMember}`,
             "color": 1146986,
