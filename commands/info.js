@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let cMember = message.author.createdAt;
     let apMember = message.mentions.users.size > 0 ? message.mentions.users.first() : message.author;
     const member = message.guild.member(apMember);
-    let pMember = message.author.presence;
+    let pMember = message.member.presence;
 
 
     message.channel.send({
