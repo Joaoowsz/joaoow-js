@@ -34,12 +34,12 @@ bot.on("guildMemberAdd", async member => {
   let welcomechannel = member.guild.channels.find(`name`, "bem-vindo");
   welcomechannel.send({
     "embed": {
-      "description": `Olá ${member}, seja bem-vindo a Comunidade Designer!\nMeu desenvolvedor: https://twitter.com/Joaoowsz`,
+      "description": `Olá ${member}, seja bem-vindo ao Discord Oficial da Nodus!\nMeu desenvolvedor: https://twitter.com/Joaoowsz`,
       "url": "",
       "color": "3066993",
     },
     "Thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/457975654781026304/461696322089779210/ee15ee2204940b811508b13eac92068d.jpg"
+      "url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
     }
   });
 })
@@ -55,9 +55,9 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "Logs - Comunidade Designer™",
+        "name": "Logs - Nodus",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/457975654781026304/461696322089779210/ee15ee2204940b811508b13eac92068d.jpg"
+        "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
       },
       "fields": [
         {
@@ -81,9 +81,9 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "Logs - Comunidade Designer™",
+        "name": "Logs - Nodus",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/457975654781026304/461696322089779210/ee15ee2204940b811508b13eac92068d.jpg"
+        "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
       },
       "fields": [
         {
