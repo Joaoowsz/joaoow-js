@@ -7,7 +7,8 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#f98d36")
     .setThumbnail(bicon)
     .addField("Nome do Bot:", bot.user.username)
-    .addField("Data de Criação:", bot.user.createdAt);
+    .addField("Data de Criação:", bot.user.createdAt)
+    .addField("Comandos:", "Use /comandos");
 
     message.channel.send(botembed);
 }
