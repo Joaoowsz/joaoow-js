@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
     let msg = message.content.toLowerCase();
+    if(mentionMessage = null) return message.reply("digite alguma mensagem.")
 
     if (message.author.bot) return;
     mention = message.mentions.users.first();
