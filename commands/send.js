@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete();
     mentionMessage = message.content.slice(5);
     mention.sendMessage(mentionMessage);
-    message.channel.send("Mensagem enviada!")
+    message.reply("Mensagem enviada!")
 }
 
 module.exports.help = {
