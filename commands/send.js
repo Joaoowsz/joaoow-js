@@ -9,11 +9,11 @@ module.exports.run = async (bot, message, args) => {
 
     if (mention == null) { return; }
     message.delete();
-    mentionMessage = message.content.slice(8);
+    mentionMessage = message.content.slice(5);
     mention.sendMessage(mentionMessage);
     message.channel.send("Mensagem enviada!")
 }
 
 module.exports.help = {
-    name: "comandos"
+    name: "send"
 }
