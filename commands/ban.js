@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Canal da punição:", message.channel)
     .addField("Motivo da punição:", bReason);
 
-    let punicoeschannel = message.guild.channels.find(`name`, "punicoes");
+    let punicoeschannel = message.guild.channels.find(`name`, "⛔punicoes");
     if(!punicoeschannel) return message.channel.send("Canal de punições não encontrado.");
 
     message.guild.member(bUser).ban(bReason);
