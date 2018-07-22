@@ -6,12 +6,12 @@ message.channel.send({
 "content": "Ajuda - Nodus Bot",
   "embed": {
     "description": "**Lista de comandos do bot:**",
-    "url": "https://discordapp.com",
-    "color": 10375995,
-    "timestamp": "2018-07-22T09:26:51.895Z",
+    "url": "https://cdn.discordapp.com/attachments/466385018227261440/470524156925181973/4GIlTLzP_400x400.jpg",
+    "color": 7419530,
+    "timestamp": new Date(),
     "footer": {
-      "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-      "text": "ASD"
+      "icon_url": message.author.displayAvatarURL,
+      "text": "Enviado por: " + message.author.username
     },
     "author": {
       "name": "Comandos - Nodus Bot",
@@ -37,5 +37,5 @@ message.channel.send({
 }
 
 module.exports.help = {
-    name: "anunciar"
+    name: "help"
 }
