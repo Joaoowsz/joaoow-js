@@ -46,7 +46,7 @@ bot.on("guildMemberAdd", async member => {
 
 bot.on("channelCreate", async channel => {
 
-  let sChannel = channel.guild.channels.find(`name`, "event-log");
+  let sChannel = channel.guild.channels.find(`name`, "📋event-log");
   sChannel.send({
     "embed": {
       "color": 3066993,
@@ -55,7 +55,7 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "Logs - Nodus",
+        "name": "📋 Logs - Nodus",
         "url": null,
         "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
       },
@@ -72,7 +72,7 @@ bot.on("channelCreate", async channel => {
 
 bot.on("channelDelete", async channel => {
 
-  let sChannel = channel.guild.channels.find(`name`, "event-log");
+  let sChannel = channel.guild.channels.find(`name`, "📋event-log");
   sChannel.send({
     "embed": {
       "color": 15158332,
@@ -81,7 +81,7 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "Logs - Nodus",
+        "name": "📋 Logs - Nodus",
         "url": null,
         "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
       },
@@ -98,7 +98,7 @@ bot.on("channelDelete", async channel => {
 
 bot.on("messageDelete", async message => {
 
-  let msg = message.guild.channels.find(`name`, "event-log");
+  let msg = message.guild.channels.find(`name`, "📋event-log");
   msg.send({
 
     "embed": {
@@ -108,7 +108,7 @@ bot.on("messageDelete", async message => {
         "text": "Author da mensagem: " + message.author.tag
       },
       "author": {
-        "name": "Logs - Nodus",
+        "name": "📋 Logs - Nodus",
         "url": message.author.displayAvatarURL,
         "icon_url": "https://cdn.discordapp.com/attachments/457975654781026304/461696322089779210/ee15ee2204940b811508b13eac92068d.jpg"
       },
