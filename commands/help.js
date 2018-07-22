@@ -30,6 +30,54 @@ message.channel.send({
       {
         "name": "Banimento",
         "value": "Formato: *!ban <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para banir um membro do Discord.*\n "
+      },
+      {
+        "name": "Expulsão",
+        "value": "Formato: *!kick <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para kickar um membro do Discord.*\n "
+      },
+      {
+        "name": "Silenciamento",
+        "value": "Formato: *!tempmute <@username> <segundos>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para mutar um membro temporariamente.*\n "
+      },
+      {
+        "name": "Informações",
+        "value": "Formato: *!info <@username>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações de um membro.*\n "
+      },
+      {
+        "name": "Bot",
+        "value": "Formato: *!botinfo*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações do bot.*\n "
+      },
+      {
+        "name": "Perguntas",
+        "value": "Formato: *!perguntar @Joaoow <pergunta>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para fazer uma pergunta ao bot.*\n "
+      },
+      {
+        "name": "Avatar",
+        "value": "Formato: *!avatar <@username>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver o avatar de um membro.*\n "
+      },
+      {
+        "name": "Dog",
+        "value": "Formato: *!dog*\nCanal: *<#470513964300632074>*  \nFunção: *Use para se divertir com imagens de cachorro.*\n "
+      },
+      {
+        "name": "RemoveGroup",
+        "value": "Formato: *!removegroup <@username> <cargo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para remover o cargo de um membro.*\n "
+      },
+      {
+        "name": "SetGroup",
+        "value": "Formato: *!setgroup <@username>* <cargo>\nCanal: *<#470513964300632074>*  \nFunção: *Use para setar o cargo de um membro.*\n "
+      },
+      {
+        "name": "Report",
+        "value": "Formato: *!report <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para reportar um membro.*\n "
+      },
+      {
+        "name": "ServerInfo",
+        "value": "Formato: *!serverinfo *\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações do servidor.*\n "
+      },
+      {
+        "name": "Avisos",
+        "value": "Formato: *!warn <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para dar um aviso a um membro.*\n "
       }
         ]
   }

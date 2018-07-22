@@ -13,8 +13,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("Canal da Denúncia:", message.channel)
     .addField("Motivo da Denúncia:", rreason);
 
-    let reportschannel = message.guild.channels.find(`name`, "reports");
-    if(!reportschannel) return message.channel.send("Canal de reports não encontrado.");
+    let reportschannel = message.guild.channels.find(`name`, "❗denuncias");
+    if(!reportschannel) return message.channel.send("Canal de denúncias não encontrado.");
 
 
     message.delete().catch(O_o=>{});
