@@ -21,15 +21,15 @@ message.channel.send({
     "fields": [
       {
         "name": "Anúncio",
-        "value": "Formato: *!anunciar <mensagem>*\nCanal: *#📢anúncios* \nFunção: *Use para enviar um anúncio.*\n "
+        "value": "Formato: *!anunciar <mensagem>*\nCanal: *<#470473648445325313>* \nFunção: *Use para enviar um anúncio.*\n "
       },
       {
         "name": "Clear",
-        "value": "Formato: *!clear <quantidade>*\nCanal: *#🤖bot*  \nFunção: *Use para limpar o chat.*\n "
+        "value": "Formato: *!clear <quantidade>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para limpar o chat.*\n "
       },
       {
         "name": "Banimento",
-        "value": "Formato: *!ban <@username> <motivo>*\nCanal: *#🤖bot*  \nFunção: *Use para banir um membro do Discord.*\n "
+        "value": "Formato: *!ban <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para banir um membro do Discord.*\n "
       }
         ]
   }
