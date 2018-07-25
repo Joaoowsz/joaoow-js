@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!rUser) return message.channel.send("Usuário não encontrado.");
     let rreason = args.join(" ").slice(22);
-    message.channel.send({
+    let reportEmbed = new message.channel.send({
       "embed": {
         "description": `**Usuário Reportado:** ${rUser}\n**Reportado Por:** ${message.author}\n**Motivo da Denúncia:** ${rreason}`,
         "url": message.author.displayAvatarURL,
