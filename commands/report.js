@@ -4,15 +4,6 @@ module.exports.run = async (bot, message, args) => {
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!rUser) return message.channel.send("Usuário não encontrado.");
     let rreason = args.join(" ").slice(22);
-
-    let reportEmbed = new Discord.RichEmbed()
-    .setDescription("**Denúncias**")
-    .setColor("#36d2f9")
-    .addField("Usuário Reportado:", `${rUser} - **ID:** ${rUser.id}`)
-    .addField("Reportado Por:", `${message.author} - **ID:** ${message.author.id}`)
-    .addField("Canal da Denúncia:", message.channel)
-    .addField("Motivo da Denúncia:", rreason);
-
     message.channel.send({
       "embed": {
         "description": `**Usuário Reportado:** ${rUser}\n**Reportado Por:** ${message.author}\n**Motivo da Denúncia:** ${rreason}`,
