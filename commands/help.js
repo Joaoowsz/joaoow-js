@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
+  message.channel.send("Enviei a lista de ajuda no seu privado, " + message.author.username +"!"); 
+
 message.author.send({
 "content": "Ajuda - Nodus Bot",
   "embed": {
@@ -73,7 +75,7 @@ message.author.send({
       },
       {
         "name": "ServerInfo",
-        "value": "Formato: *!serverinfo *\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações do servidor.*\n "
+        "value": "Formato: *!serverinfo*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações do servidor.*\n "
       },
       {
         "name": "Avisos",
@@ -82,7 +84,7 @@ message.author.send({
         ]
   }
 }).catch(err => {
-  message.channel.send("dm privada")
+  message.channel.send("Não foi possível enviar a lista de comandos no seu privado, pois sua DM está privada.")
 })
 }
 
