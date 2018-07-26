@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-message.channel.send({
+message.author.send({
 "content": "Ajuda - Nodus Bot",
   "embed": {
     "description": "**Prefix = ``!``**",
@@ -81,6 +81,8 @@ message.channel.send({
       }
         ]
   }
+}).catch(err => {
+  message.channel.send("dm privada")
 })
 }
 
