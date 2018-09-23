@@ -9,13 +9,13 @@ module.exports.run = async (bot, message, args) => {
 
     let banEmbed = new message.channel.send({
       "embed": {
-        "title": "[PT] Punições - Intel Corporation",
-        "description": `\n**Punição:** Banimento\n**Usuário punido:** ${bUser}\n**Punido por:** ${message.author.name}\n**Motivo:** ${bReason}`,
+        "title": "[US] Punishments - Intel Corporation",
+        "description": `\n**Punishment: Banishment** \n**User punished:** ${bUser}\n**Punished for:** ${message.author.name}\n**Reason:** ${bReason}`,
         "url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png",
         "color": 1597539,
         "footer": {
           "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-          "text": "Equipe de moderação - Intel Corporation"
+          "text": "The moderation team - Intel Corporation"
         }
       }
     })
