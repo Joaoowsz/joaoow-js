@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!bUser) return message.channel.send("**[US]** User not found.\n**[PT]**Usuário não encontrado.");
+    if(!bUser) return message.channel.send("**[US]** Usage: <@> <reason>.\n**[PT]** Use: !ban <@> <motivo>.");
     let bReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**[US]** You do not have permission.\n**[PT]** VOcê não possui permissão.");
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**[US]** You do not have permission.\n**[PT]** Você não possui permissão.");
     if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**[US]** This user can not be banned!\n**[PT]** Este usuário não pode ser punido.");
 
     let banEmbed = new message.channel.send({
