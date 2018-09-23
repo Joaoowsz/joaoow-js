@@ -24,7 +24,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("factions no loth.us", {type: "PLAYING"});
+  bot.user.setActivity("Desenvolvido por @Joaoowsz", {type: "PLAYING"});
 
 });
 
@@ -34,12 +34,12 @@ bot.on("guildMemberAdd", async member => {
   let welcomechannel = member.guild.channels.find(`name`, "bem-vindo");
   welcomechannel.send({
     "embed": {
-      "description": `Olá ${member}, seja bem-vindo ao Discord Oficial da Nodus!\nMeu desenvolvedor: https://twitter.com/Joaoowsz`,
+      "description": `Olá ${member}, seja bem-vindo a CS:GO Community!\nMeu desenvolvedor: https://twitter.com/Joaoowsz`,
       "url": "",
       "color": "3066993",
     },
     "Thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
+      "url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
     }
   });
 })
@@ -55,9 +55,9 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Nodus",
+        "name": "📋 Logs - CS:GO Community",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
+        "icon_url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
       },
       "fields": [
         {
@@ -81,9 +81,9 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Nodus",
+        "name": "📋 Logs - CS:GO Community",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
+        "icon_url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
       },
       "fields": [
         {
@@ -108,9 +108,9 @@ bot.on("messageDelete", async message => {
         "text": "Author da mensagem: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - Nodus",
+        "name": "📋 Logs - CS:GO Community",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://cdn.discordapp.com/attachments/466377291421843477/466377410603122688/ulqHkNL.jpg"
+        "icon_url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
       },
       "fields": [
         {
