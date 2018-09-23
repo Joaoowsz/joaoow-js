@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Você não possui permissão!");
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("**[US]** You do not have permission.\n**[PT]** Você não possui permissão.");
     let botmessage = args.join(" ");
     message.delete().catch();
     message.channel.send({
@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
             },
             "fields": [
               {
-                "name": "📢 Atenção",
+                "name": "📢 Important:",
                 "value": botmessage
               }
             ]
