@@ -31,15 +31,15 @@ bot.on("ready", async () => {
 bot.on("guildMemberAdd", async member => {
   console.log(`${member.id} entrou no servidor!`);
 
-  let welcomechannel = member.guild.channels.find(`name`, "bem-vindo");
+  let welcomechannel = member.guild.channels.find(`name`, "🌞welcome");
   welcomechannel.send({
     "embed": {
-      "description": `Olá ${member}, seja bem-vindo a CS:GO Community!\nMeu desenvolvedor: https://twitter.com/Joaoowsz`,
+      "description": `**[PT]** Olá ${member}, seja bem-vindo ao ${server.name}!\nMeu desenvolvedor: https://twitter.com/Joaoowsz\n\n**[US]** Hello ${member}, welcome to ${server.name}!\nMy developer:: https://twitter.com/Joaoowsz`,
       "url": "",
       "color": "3066993",
     },
     "Thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
+      "url": author.message.displayAvatarURL
     }
   });
 })
@@ -55,14 +55,17 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - CS:GO Community",
+        "name": "📋  Logs - Intel Corporation",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
+        "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
+      },
+      "tumbnail": {
+        "url": "https://cdn.discordapp.com/attachments/377876908622217226/493547821362970637/MAIS.png"
       },
       "fields": [
         {
           "name": "Um canal foi criado.",
-          "value": "Canal criado: " + channel
+          "value": "Canal criado: " + channel.name
         }
       ]
     }
@@ -81,9 +84,12 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - CS:GO Community",
+        "name": "📋  Logs - Intel Corporation",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
+        "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
+      },
+      "tumbnail": {
+        "url": "https://cdn.discordapp.com/attachments/377876908622217226/493547823619506176/MENOS.png"
       },
       "fields": [
         {
@@ -108,9 +114,9 @@ bot.on("messageDelete", async message => {
         "text": "Author da mensagem: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - CS:GO Community",
+        "name": "📋 Logs - Intel Corporation",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://cdn.discordapp.com/attachments/493403166680023041/493403343109226506/images.jpg"
+        "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
       },
       "fields": [
         {
