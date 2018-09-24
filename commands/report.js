@@ -2,19 +2,18 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!rUser) return message.channel.send("Usuário não encontrado.");
+    if(!rUser) return message.channel.send("User not found.");
     let rreason = args.join(" ").slice(22);
 
     let reportEmbed = new Discord.RichEmbed()
-    .setDescription("**Denúncias**")
+    .setDescription("**Reports - Intel Corporation**")
     .setColor("#36d2f9")
-    .addField("Usuário Reportado:", `${rUser} - **ID:** ${rUser.id}`)
-    .addField("Reportado Por:", `${message.author} - **ID:** ${message.author.id}`)
-    .addField("Canal da Denúncia:", message.channel)
-    .addField("Motivo da Denúncia:", rreason);
+    .addField("reported user:", `${rUser} - **ID:** ${rUser.id}`)
+    .addField("reported by:", `${message.author} - **ID:** ${message.author.id}`)
+    .addField("Reason for report:", rreason);
 
-    let reportschannel = message.guild.channels.find(`name`, "❗denuncias");
-    if(!reportschannel) return message.channel.send("Canal de denúncias não encontrado.");
+    let reportschannel = message.guild.channels.find(`name`, "❗reports");
+    if(!reportschannel) return message.channel.send("Report channel not found.");
 
 
     message.delete().catch(O_o=>{});

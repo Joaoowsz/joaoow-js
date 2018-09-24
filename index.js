@@ -34,12 +34,12 @@ bot.on("guildMemberAdd", async member => {
   let welcomechannel = member.guild.channels.find(`name`, "🌞welcome");
   welcomechannel.send({
     "embed": {
-      "description": `**[PT]** Olá ${member}, seja bem-vindo ao ${server.name}!\nMeu desenvolvedor: https://twitter.com/Joaoowsz\n\n**[US]** Hello ${member}, welcome to ${server.name}!\nMy developer:: https://twitter.com/Joaoowsz`,
+      "description": `Hello ${member}, welcome to ${server.name}!\nMy developer: https://twitter.com/Joaoowsz`,
       "url": "",
       "color": "3066993",
     },
     "Thumbnail": {
-      "url": author.message.displayAvatarURL
+      "url": member.displayAvatarURL
     }
   });
 })
@@ -55,17 +55,14 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋  Logs - Intel Corporation",
+        "name": "📋 Logs - Intel Corporation",
         "url": null,
         "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
       },
-      "tumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/377876908622217226/493547821362970637/MAIS.png"
-      },
       "fields": [
         {
-          "name": "Um canal foi criado.",
-          "value": "Canal criado: " + channel.name
+          "name": "A channel was created.",
+          "value": "Channel created: " + channel
         }
       ]
     }
@@ -84,17 +81,14 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋  Logs - Intel Corporation",
+        "name": "📋 Logs - Intel Corporation",
         "url": null,
         "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
       },
-      "tumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/377876908622217226/493547823619506176/MENOS.png"
-      },
       "fields": [
         {
-          "name": "Um canal foi deletado.",
-          "value": "Canal deletado: " + channel.name
+          "name": "A channel was deleted.",
+          "value": "Channel deleted: " + channel.name
         }
       ]
     }
@@ -111,7 +105,7 @@ bot.on("messageDelete", async message => {
       "color": 9452521,
       "footer": {
         "icon_url": message.author.displayAvatarURL,
-        "text": "Author da mensagem: " + message.author.tag
+        "text": "Message author: " + message.author.tag
       },
       "author": {
         "name": "📋 Logs - Intel Corporation",
@@ -120,8 +114,8 @@ bot.on("messageDelete", async message => {
       },
       "fields": [
         {
-          "name": "Mensagem apagada",
-          "value": message.content
+          "name": "A message was deleted.",
+          "value": "Message deleted: " + message.content
         }
       ]
     }

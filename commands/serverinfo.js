@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
             },
             "fields": [
                 {
-                    "name": ":crown: Dono",
+                    "name": ":crown: Owner",
                     "value": message.guild.owner.displayName,
                     "inline": true
                   },
@@ -36,12 +36,12 @@ module.exports.run = async (bot, message, args) => {
                   "inline": true
                 },
                 {
-                    "name": ":raising_hand: Usuários",
+                    "name": ":raising_hand: Users",
                     "value": message.guild.memberCount,
                     "inline": true
                   },
                   {
-                  "name": ":clipboard: Data de criação",
+                  "name": ":clipboard: Creation date",
                   "value": message.guild.createdAt,
                   "inline": true
                 }

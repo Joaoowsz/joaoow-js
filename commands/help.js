@@ -2,10 +2,10 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  message.channel.send("Enviei a lista de ajuda no seu privado, " + message.author.username +"!"); 
+  message.channel.send("I sent the list of commands in your private, " + message.author.username +"!"); 
 
 message.author.send({
-"content": "Ajuda - Nodus Bot",
+"content": "Help - Intel Corporation",
   "embed": {
     "description": "**Prefix = ``!``**",
     "url": "https://cdn.discordapp.com/attachments/466385018227261440/470524156925181973/4GIlTLzP_400x400.jpg",
@@ -13,7 +13,7 @@ message.author.send({
     "timestamp": new Date(),
     "footer": {
       "icon_url": message.author.displayAvatarURL,
-      "text": "Enviado por: " + message.author.username
+      "text": "List of commands - Intel Corporation"
     },
     "author": {
       "name": "Comandos - Nodus Bot",
@@ -22,69 +22,57 @@ message.author.send({
     },
     "fields": [
       {
-        "name": "Anúncio",
-        "value": "Formato: *!anunciar <mensagem>*\nCanal: *<#470473648445325313>* \nFunção: *Use para enviar um anúncio.*\n "
+        "name": "announcements",
+        "value": "Format: *!anunciar <message>*\nChannel: *<#493582154874224650>* \nFunction: *Use to send an ad.*\n "
       },
       {
         "name": "Clear",
-        "value": "Formato: *!clear <quantidade>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para limpar o chat.*\n "
+        "value": "Format: *!clear <quantidade>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to clear chat.*\n "
       },
       {
-        "name": "Banimento",
-        "value": "Formato: *!ban <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para banir um membro do Discord.*\n "
+        "name": "Banishment",
+        "value": "Format: *!ban <@username> <motivo>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to ban a discord member.*\n "
       },
       {
-        "name": "Expulsão",
-        "value": "Formato: *!kick <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para kickar um membro do Discord.*\n "
+        "name": "Expulsion",
+        "value": "Format: *!kick <@username> <motivo>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to kick a discord member.*\n "
       },
       {
-        "name": "Silenciamento",
-        "value": "Formato: *!tempmute <@username> <segundos>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para mutar um membro temporariamente.*\n "
+        "name": "Silencing",
+        "value": "Format: *!tempmute <@username> <seconds>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to temporarily mute a member.*\n "
       },
       {
-        "name": "Informações",
-        "value": "Formato: *!info <@username>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações de um membro.*\n "
+        "name": "Bot Info",
+        "value": "Format: *!botinfo*\nChannel: *<#493582154874224650>*  \nFunction: *Use to view bot information.*\n "
       },
       {
-        "name": "Bot",
-        "value": "Formato: *!botinfo*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações do bot.*\n "
-      },
-      {
-        "name": "Perguntas",
-        "value": "Formato: *!perguntar @Joaoow <pergunta>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para fazer uma pergunta ao bot.*\n "
+        "name": "Questions",
+        "value": "Format: *!perguntar @Joaoow <pergunta>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to ask the bot.*\n "
       },
       {
         "name": "Avatar",
-        "value": "Formato: *!avatar <@username>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver o avatar de um membro.*\n "
+        "value": "Format: *!avatar <@username>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to view a member's avatar.*\n "
       },
       {
         "name": "Dog",
-        "value": "Formato: *!dog*\nCanal: *<#470513964300632074>*  \nFunção: *Use para se divertir com imagens de cachorro.*\n "
+        "value": "Format: *!dog*\nChannel: *<#493582154874224650>*  \nFunction: *Use for fun with dog pictures.*\n "
       },
       {
         "name": "RemoveGroup",
-        "value": "Formato: *!removegroup <@username> <cargo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para remover o cargo de um membro.*\n "
+        "value": "Format: *!removegroup <@username> <role>*\nChannel: *<#493582154874224650>*  \nFunction: *Use to remove a member role.*\n "
       },
       {
         "name": "SetGroup",
-        "value": "Formato: *!setgroup <@username>* <cargo>\nCanal: *<#470513964300632074>*  \nFunção: *Use para setar o cargo de um membro.*\n "
-      },
-      {
-        "name": "Report",
-        "value": "Formato: *!report <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para reportar um membro.*\n "
+        "value": "Format: *!setgroup <@username>* <role>\nChannel: *<#493582154874224650>*  \nFunction: *Use to add a member role.*\n "
       },
       {
         "name": "ServerInfo",
-        "value": "Formato: *!serverinfo*\nCanal: *<#470513964300632074>*  \nFunção: *Use para ver as informações do servidor.*\n "
-      },
-      {
-        "name": "Avisos",
-        "value": "Formato: *!warn <@username> <motivo>*\nCanal: *<#470513964300632074>*  \nFunção: *Use para dar um aviso a um membro.*\n "
+        "value": "Format: *!serverinfo*\nChannel: *<#493582154874224650>*  \nFunction: *Use to view server information.*\n "
       }
         ]
   }
 }).catch(err => {
-  message.channel.send("Não foi possível enviar a lista de comandos no seu privado, pois sua DM está privada.")
+  message.channel.send("Could not send list of commands on your private, because your DM is private.")
 })
 }
 

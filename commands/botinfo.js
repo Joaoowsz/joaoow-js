@@ -3,12 +3,13 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
     let bicon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
-    .setDescription("**Informações do Bot**")
+    .setDescription("**Bot Info**")
     .setColor("#f98d36")
     .setThumbnail(bicon)
-    .addField("Nome do Bot:", bot.user.username)
-    .addField("Data de Criação:", bot.user.createdAt)
-    .addField("Comandos:", "Use /comandos");
+    .addField("Bot name:", bot.user.username)
+    .addField("Criation date:", bot.user.createdAt)
+    .addField("Commands:", "Use !help")
+    .addField("Bot Developer:", "https://twitter.com/Joaoowsz");
 
     message.channel.send(botembed);
 }

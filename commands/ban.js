@@ -2,26 +2,21 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!bUser) return message.channel.send("**[US]** Usage: <@> <reason>.\n**[PT]** Use: !ban <@> <motivo>.");
+    if(!bUser) return message.channel.send("User not found.");
     let bReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**[US]** You do not have permission.\n**[PT]** Você não possui permissão.");
-    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**[US]** This user can not be banned!\n**[PT]** Este usuário não pode ser punido.");
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have permission.");
+    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("This user can not be banned.");
 
-    let banEmbed = new message.channel.send({
-      "embed": {
-        "title": "[US] Punishments - Intel Corporation",
-        "description": `\n**Punishment: Banishment** \n**User punished:** ${bUser}\n**Punished for:** ${message.author.name}\n**Reason:** ${bReason}`,
-        "url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png",
-        "color": 1597539,
-        "footer": {
-          "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-          "text": "The moderation team - Intel Corporation"
-        }
-      }
-    })
+    let banEmbed = new Discord.RichEmbed()
+    .setDescription("**Punishments - Intel Corporation**")
+    .setColor("#f95336")
+    .addField("Punishment:", `Banishment`)
+    .addField("Punished user:", `${bUser} - **ID:** ${bUser.id}`)
+    .addField("Punished for:", `<@${message.author.id}> - **ID:** ${message.author.id}`)
+    .addField("Reason for punishment:", bReason);
 
     let punicoeschannel = message.guild.channels.find(`name`, "⛔punicoes");
-    if(!punicoeschannel) return message.channel.send("**[US]** Channel of punishments not found.\n**[PT]** Canal de punições não encontrado.");
+    if(!punicoeschannel) return message.channel.send("Channel of punishments not found.");
 
     message.guild.member(bUser).ban(bReason);
     punicoeschannel.send(banEmbed);

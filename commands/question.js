@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     
-    if(!args[1]) return message.reply("Faça uma pergunta completa!");
-    let replies = ["Sim", "Não", "Talvez"];
+    if(!args[1]) return message.reply("Ask a complete question!");
+    let replies = ["Yes", "No", "Maybe"];
 
     let result = Math.floor((Math.random() * replies.length));
     let question = args.slice(1).join(" ");
@@ -11,13 +11,13 @@ module.exports.run = async (bot, message, args) => {
     let ballembed = new Discord.RichEmbed()
     .setAuthor(message.author.tag)
     .setColor("#8de878")
-    .addField("Pergunta", question)
-    .addField("Resposta", replies[result])
+    .addField("Question", question)
+    .addField("Answer", replies[result])
 
     message.channel.send(ballembed);
 }
 
 
 module.exports.help = {
-    name: "perguntar"
+    name: "question"
 }

@@ -1,21 +1,21 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Você não possui permissão.");
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have permission.");
     let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-    if(!rMember) return message.reply("Use: !addrole [@username] [Cargo].");
+    if(!rMember) return message.reply("Use: !removegroup [@username] [role].");
     let role = args.join(" ").slice(22);
-    if(!role) return message.reply("Especifique o cargo!");
+    if(!role) return message.reply("Specify the role.");
     let gRole = message.guild.roles.find(`name`, role);
-    if(!gRole) return message.reply("Cargo não encontrado.");
+    if(!gRole) return message.reply("Role not found.");
 
-    if(!rMember.roles.has(gRole.id)) return message.reply("Este usuário não tem esse cargo.");
+    if(!rMember.roles.has(gRole.id)) return message.reply("This user does not have this role.");
     await(rMember.removeRole(gRole.id));
 
     try{
-        await rMember.send(`Olá <@${rMember.id}>, seu cargo "${gRole.name}" foi removido.`)
+        await rMember.send(`Hello <@${rMember.id}>, your role "${gRole.name}" was removed.`)
       }catch(e){
-        message.channel.send(`O usuário <@${rMember.id}> teve seu cargo "${gRole.name}" removido.`)
+        message.channel.send(`User <@${rMember.id}> has had his role "${gRole.name}" removed.`)
       }
 
 }
