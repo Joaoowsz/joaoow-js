@@ -31,7 +31,7 @@ bot.on("ready", async () => {
 bot.on("guildMemberAdd", async member => {
   console.log(`${member.id} entrou no servidor!`);
 
-  let welcomechannel = member.guild.channels.find(`name`, "🌞welcome");
+  let welcomechannel = member.guild.channels.find(`name`, "【📣】welcomer-user");
   welcomechannel.send({
     "embed": {
       "description": `Hello ${member}, welcome to ${server.name}!\nMy developer: https://twitter.com/Joaoowsz`,
@@ -39,7 +39,7 @@ bot.on("guildMemberAdd", async member => {
       "color": "3066993",
     },
     "Thumbnail": {
-      "url": member.displayAvatarURL
+      "url": author.message.displayAvatarURL
     }
   });
 })
