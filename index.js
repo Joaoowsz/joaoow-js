@@ -39,7 +39,7 @@ bot.on("guildMemberAdd", async member => {
       "color": "3066993",
     },
     "Thumbnail": {
-      "url": author.message.displayAvatarURL
+      "url": "https://cdn.discordapp.com/attachments/493263982103363584/493564967073742868/IMG_rs9hs4.jpg"
     }
   });
 })
