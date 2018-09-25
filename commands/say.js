@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete().catch();
     message.channel.send({
         "embed": {
+          "content": "@everyone",
             "color": 1752220,
             "timestamp": new Date(),
             "footer": {
@@ -25,5 +26,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "anunciar"
+    name: "say"
 }

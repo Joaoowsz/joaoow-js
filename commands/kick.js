@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!kUser) return message.channel.send("User not found!");
+    if(!kUser) return message.channel.send("Use: +kick <@username> <reason>");
     let kReason = args.join(" ").slice(22);
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have permission!");
     if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("This user can not be banned!");

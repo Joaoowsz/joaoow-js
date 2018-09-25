@@ -37,16 +37,9 @@ bot.on("guildMemberAdd", async member => {
       "description": `Hello ${member}, welcome to ${server.name}!\nMy developer: https://twitter.com/Joaoowsz`,
       "url": "",
       "color": "3066993",
-      "timestamp": new Date(),
-    },
-    "footer": {
-      "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png",
-      "text": "Reception"
-    },
-    "Thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/493263982103363584/493564967073742868/IMG_rs9hs4.jpg"
+      "timestamp": new Date()
     }
-  });
+  })
 })
 
 bot.on("channelCreate", async channel => {

@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have permission.");
     let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-    if(!rMember) return message.reply("Use: !removegroup [@username] [role].");
+    if(!rMember) return message.reply("Use: +removegroup <@username> <role>.");
     let role = args.join(" ").slice(22);
     if(!role) return message.reply("Specify the role.");
     let gRole = message.guild.roles.find(`name`, role);

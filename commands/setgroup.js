@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   //!addrole @andrew Dog Person
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have permission.");
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-  if(!rMember) return message.reply("Use: !addrole [@username] [role].");
+  if(!rMember) return message.reply("Use: +addrole <@username> <role>.");
   let role = args.join(" ").slice(22);
   if(!role) return message.reply("Specify the role!");
   let gRole = message.guild.roles.find(`name`, role);
