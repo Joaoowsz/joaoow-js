@@ -38,47 +38,47 @@ message.author.send({
       },
       {
         "name": "Clear",
-        "value": "Format: *+clear <quantidade>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to clear chat.*\n "
+        "value": "Format: *+clear <quantidade>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to clear chat.*\n "
       },
       {
         "name": "Banishment",
-        "value": "Format: *+ban <@username> <motivo>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to ban a discord member.*\n "
+        "value": "Format: *+ban <@username> <motivo>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to ban a discord member.*\n "
       },
       {
         "name": "Expulsion",
-        "value": "Format: *+kick <@username> <motivo>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to kick a discord member.*\n "
+        "value": "Format: *+kick <@username> <motivo>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to kick a discord member.*\n "
       },
       {
         "name": "Silencing",
-        "value": "Format: *+tempmute <@username> <seconds>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to temporarily mute a member.*\n "
+        "value": "Format: *+tempmute <@username> <seconds>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to temporarily mute a member.*\n "
       },
       {
         "name": "Bot Info",
-        "value": "Format: *+botinfo*\nChannel: *<#493582577773314061>*  \nFunction: *Use to view bot information.*\n "
+        "value": "Format: *+botinfo*\nChannel: *<#494168168969797632>*  \nFunction: *Use to view bot information.*\n "
       },
       {
         "name": "Questions",
-        "value": "Format: *+perguntar @Joaoow <pergunta>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to ask the bot.*\n "
+        "value": "Format: *+perguntar @Joaoow <pergunta>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to ask the bot.*\n "
       },
       {
         "name": "Avatar",
-        "value": "Format: *+avatar <@username>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to view a member's avatar.*\n "
+        "value": "Format: *+avatar <@username>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to view a member's avatar.*\n "
       },
       {
         "name": "Dog",
-        "value": "Format: *+dog*\nChannel: *<#493582577773314061>*  \nFunction: *Use for fun with dog pictures.*\n "
+        "value": "Format: *+dog*\nChannel: *<#494168168969797632>*  \nFunction: *Use for fun with dog pictures.*\n "
       },
       {
         "name": "RemoveGroup",
-        "value": "Format: *+removegroup <@username> <role>*\nChannel: *<#493582577773314061>*  \nFunction: *Use to remove a member role.*\n "
+        "value": "Format: *+removegroup <@username> <role>*\nChannel: *<#494168168969797632>*  \nFunction: *Use to remove a member role.*\n "
       },
       {
         "name": "SetGroup",
-        "value": "Format: *+setgroup <@username>* <role>\nChannel: *<#493582577773314061>*  \nFunction: *Use to add a member role.*\n "
+        "value": "Format: *+setgroup <@username>* <role>\nChannel: *<#494168168969797632>*  \nFunction: *Use to add a member role.*\n "
       },
       {
         "name": "ServerInfo",
-        "value": "Format: *+serverinfo*\nChannel: *<#493582577773314061>*  \nFunction: *Use to view server information.*\n "
+        "value": "Format: *+serverinfo*\nChannel: *<#494168168969797632>*  \nFunction: *Use to view server information.*\n "
       }
         ]
   }
