@@ -6,8 +6,8 @@ module.exports.run = async (bot, message, args) => {
     let botmessage = args.join(" ");
     message.delete().catch();
     message.channel.send({
+      "content": "@everyone",
         "embed": {
-          "content": "@everyone",
             "color": 1752220,
             "timestamp": new Date(),
             "footer": {
