@@ -37,7 +37,11 @@ bot.on("guildMemberAdd", async member => {
       "description": `Hello ${member}, welcome to ${server.name}!\nMy developer: https://twitter.com/Joaoowsz`,
       "url": "",
       "color": "3066993",
-      "timestamp": new Date()
+      "timestamp": new Date(),
+      "footer": {
+        "icon_url": member.displayAvatarURL,
+        "text": "Reception - " + server.name
+      }
     }
   })
 })
