@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Punished for:", `<@${message.author.id}> - **ID:** ${message.author.id}`)
     .addField("Reason for punishment:", kReason);
 
-    let punicoesChannel = message.guild.channels.find(`name`, "⛔punicoes");
+    let punicoesChannel = message.guild.channels.find(`name`, "⛔punishments");
     if(!punicoesChannel) return message.channel.send("Channel of punishments not found.");
 
     message.guild.member(kUser).kick(kReason);
