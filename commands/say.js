@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
             },
             "fields": [
               {
-                "name": "📢 Important:",
+                "name": "📢 Announcement:",
                 "value": botmessage
               }
             ]
