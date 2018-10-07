@@ -17,7 +17,6 @@ module.exports.run = async (bot, message, args) => {
       }catch(e){
         message.channel.send(`O membro ``<@${rMember.id}>`` teve o cargo ``${gRole.name}`` retirado pelo staffer ``${message.author.username}``.`)
       }
-
 }
 
 module.exports.help = {
