@@ -45,12 +45,11 @@ bot.on("guildMemberAdd", async member => {
       "thumbnail": {
         "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
-      "fields": [
-        {
-          "name": `Olá ${member}, seja bem vindo ao AtlanticMC - Oficial!`,
-          "value": `**IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`
-        }
-      ]
+      "author": {
+        "name": `${member.displayName}, seja bem vindo ao Discord Oficial da Rede AtlanticMC`,
+        "icon_url": member.displayAvatarURL,
+        "url": null
+      }
       }
     }
   );
