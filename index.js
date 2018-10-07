@@ -40,11 +40,11 @@ bot.on("guildMemberAdd", async member => {
       "timestamp": new Date(),
       "footer": {
         "icon_url": member.displayAvatarURL,
-        "text": "Rede Atlantic"
+        "text": "Rede Atlantic",
       }
     },
     "Thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
+      "url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png",
     }
   });
 })
