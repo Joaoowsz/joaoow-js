@@ -14,9 +14,9 @@ module.exports.run = async (bot, message, args) => {
   await(rMember.addRole(gRole.id));
 
   try{
-    await rMember.send(`Olá <@${rMember.id}>, você recebeu o cargo ``${gRole.name}`` no servidor ``${server.name}``.`)
+    await rMember.send(`Olá <@${rMember.id}>, você recebeu o cargo ``${gRole.name}`` no servidor ``AtlanticMC - Official``.`)
   }catch(e){
-    message.channel.send(`O membro ``${rMember.id}>`` foi setado como ``${gRole.name}`` pelo staffer ``${message.author.username}``.`)
+    message.channel.send(`O membro ``${rMember.id}>`` foi setado como ``${gRole.name}`` pelo staffer ${message.author.name}`)
   }
 }
 
