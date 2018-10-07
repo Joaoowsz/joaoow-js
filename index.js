@@ -31,7 +31,7 @@ bot.on("ready", async () => {
 bot.on("guildMemberAdd", async member => {
   console.log(`${member.id} entrou no servidor!`);
 
-  let welcomechannel = member.guild.channels.find(`name`, "bem-vindo");
+  let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
   welcomechannel.send({
     "embed": {
       "description": `Olá ${member}, seja bem vindo ao AtlanticMC - Oficial! \n\n **IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
