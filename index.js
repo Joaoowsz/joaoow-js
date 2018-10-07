@@ -39,11 +39,11 @@ bot.on("guildMemberAdd", async member => {
       "color": 9964474,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png",
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
         "text": "Rede Atlantic"
       },
       "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
+        "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       }
     }
   });
@@ -62,7 +62,7 @@ bot.on("channelCreate", async channel => {
       "author": {
         "name": "📋 Logs - Atlantic",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "fields": [
         {
@@ -88,7 +88,7 @@ bot.on("channelDelete", async channel => {
       "author": {
         "name": "📋 Logs - Atlantic",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "fields": [
         {
@@ -115,7 +115,7 @@ bot.on("messageDelete", async message => {
       "author": {
         "name": "📋 Logs - Atlantic",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "fields": [
         {
