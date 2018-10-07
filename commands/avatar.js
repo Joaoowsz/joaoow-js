@@ -20,7 +20,7 @@ module.exports.run = (bot, message, args) => {
                 "url": member.displayAvatarURL
             },
             "author": {
-                "name": "Avatar of " + member.username,
+                "name": "Avatar de " + member.username,
                 "url": "",
                 "icon_url": ""
             }
