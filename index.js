@@ -34,8 +34,8 @@ bot.on("guildMemberAdd", async member => {
   let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
   welcomechannel.send({
     "embed": {
-      "description": `Olá ${member}, seja bem vindo ao AtlanticMC - Oficial! \n\n **IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
-      "url": "https://discordapp.com",
+      "description": `**IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
+      "url": null,
       "color": 9964474,
       "timestamp": new Date(),
       "footer": {
@@ -44,6 +44,10 @@ bot.on("guildMemberAdd", async member => {
       },
       "thumbnail": {
         "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+      },
+      "author": {
+        "name":"Olá ${member}, seja bem vindo ao AtlanticMC - Oficial!",
+        "icon_url": member.displayColor
       }
     }
   });
