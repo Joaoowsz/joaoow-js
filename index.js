@@ -46,7 +46,7 @@ bot.on("guildMemberAdd", async member => {
         "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "author": {
-        "name":`Olá ${member.username}, seja bem vindo ao AtlanticMC - Oficial!`,
+        "name":`Olá ${member}, seja bem vindo ao AtlanticMC - Oficial!`,
         "icon_url": null
       }
     }
