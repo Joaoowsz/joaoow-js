@@ -28,24 +28,26 @@ bot.on("ready", async () => {
 
 });
 
-bot.on("guildMemberAdd", member => {
-  member.guilds.channel.get('498317995840503818').send(member.user.username + {
-    
+bot.on("guildMemberAdd", async member => {
+  console.log(`${member.id} entrou no servidor!`);
+
+  let welcomechannel = member.guild.channels.find(`name`, "bem-vindo");
+  welcomechannel.send({
     "embed": {
-      "description": `Olá ${member}, bem vindo ao ${server.name}!\n\n**IP:** atlanticmc.com.br\n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
+      "description": `Olá ${member}, seja bem vindo ao ${server.name}! \n\n **IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
       "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
-      "color": 714666,
-      "timestamp": "2018-10-07T02:20:15.871Z",
+      "color": "3066993",
+      "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
-        "text": "Desenvolvido por Joaoowsz"
-      },
-      "thumbnail": {
-        "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
+        "icon_url": member.displayAvatarURL,
+        "text": "Atlantic MC"
       }
+    },
+    "Thumbnail": {
+      "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
     }
-      })
-    })
+  });
+})
 
 bot.on("channelCreate", async channel => {
 
