@@ -47,7 +47,7 @@ bot.on("guildMemberAdd", async member => {
       },
       "author": {
         "name":"Olá ${member}, seja bem vindo ao AtlanticMC - Oficial!",
-        "icon_url": member.displayColor
+        "icon_url": member.displayAvatarURL
       }
     }
   });
