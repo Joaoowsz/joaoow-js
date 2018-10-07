@@ -24,23 +24,23 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("ɪɴᴛᴇʟ ᴄᴏʀᴘᴏʀᴀᴛɪᴏɴ", {type: "PLAYING"});
+  bot.user.setActivity("atlanticmc.com.br", {type: "PLAYING"});
 
 });
 
 bot.on("guildMemberAdd", async member => {
   console.log(`${member.id} entrou no servidor!`);
 
-  let welcomechannel = member.guild.channels.find(`name`, "【📣】welcomer-user");
+  let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
   welcomechannel.send({
     "embed": {
-      "description": `Hello ${member}, welcome to ${server.name}!\nMy developer: https://twitter.com/Joaoowsz`,
+      "description": `Olá ${member}, bem vindo ao ${server.name}!\n\n**IP:** atlanticmc.com.br\n**Twitter:** twitter.com/RedeAtlantic \n**Loja:** ~Em breve~`,
       "url": null,
       "color": "3066993",
       "timestamp": new Date(),
       "footer": {
         "icon_url": null,
-        "text": server.name
+        "text": "Desenvolvido por: Joaoowsz"
       }
     }
   })
@@ -48,7 +48,7 @@ bot.on("guildMemberAdd", async member => {
 
 bot.on("channelCreate", async channel => {
 
-  let sChannel = channel.guild.channels.find(`name`, "📋event-log");
+  let sChannel = channel.guild.channels.find(`name`, "📋logs");
   sChannel.send({
     "embed": {
       "color": 3066993,
@@ -57,14 +57,14 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Intel Corporation",
+        "name": "📋 Logs - Atlantic",
         "url": null,
-        "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "fields": [
         {
-          "name": "A channel was created.",
-          "value": "Channel created: " + channel
+          "name": "Um canal foi criado.",
+          "value": "Canal criado: " + channel
         }
       ]
     }
@@ -83,14 +83,14 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Intel Corporation",
+        "name": "📋 Logs - Atlantic",
         "url": null,
-        "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "fields": [
         {
-          "name": "A channel was deleted.",
-          "value": "Channel deleted: " + channel.name
+          "name": "Um canal foi deletado.",
+          "value": "Canal deletado: " + channel.name
         }
       ]
     }
@@ -107,17 +107,17 @@ bot.on("messageDelete", async message => {
       "color": 9452521,
       "footer": {
         "icon_url": message.author.displayAvatarURL,
-        "text": "Message author: " + message.author.tag
+        "text": "Autor: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - Intel Corporation",
+        "name": "📋 Logs - Atlantic",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://images-ext-1.discordapp.net/external/MZf3GbJLoJUf9uQXPdsG681FX7_TWe-6UBnJPsuKW4s/https/cdn.discordapp.com/attachments/490177937094737941/491616735279972352/latest.png"
+        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
       },
       "fields": [
         {
-          "name": "A message was deleted.",
-          "value": "Message deleted: " + message.content
+          "name": "Uma mensagem foi deletada.",
+          "value": "Mensagem deletada: " + message.content
         }
       ]
     }
