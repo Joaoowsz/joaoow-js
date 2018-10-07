@@ -35,16 +35,16 @@ bot.on("guildMemberAdd", async member => {
   welcomechannel.send({
     "embed": {
       "description": `Olá ${member}, seja bem vindo ao AtlanticMC - Oficial! \n\n **IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
-      "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
+      "url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png",
       "color": "3066993",
       "timestamp": new Date(),
       "footer": {
         "icon_url": member.displayAvatarURL,
-        "text": "Atlantic MC"
+        "text": "Rede Atlantic"
       }
     },
     "Thumbnail": {
-      "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+      "url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
     }
   });
 })
@@ -62,7 +62,7 @@ bot.on("channelCreate", async channel => {
       "author": {
         "name": "📋 Logs - Atlantic",
         "url": null,
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+        "icon_url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
       },
       "fields": [
         {
@@ -77,7 +77,7 @@ bot.on("channelCreate", async channel => {
 
 bot.on("channelDelete", async channel => {
 
-  let sChannel = channel.guild.channels.find(`name`, "📋event-log");
+  let sChannel = channel.guild.channels.find(`name`, "📋logs");
   sChannel.send({
     "embed": {
       "color": 15158332,
@@ -88,7 +88,7 @@ bot.on("channelDelete", async channel => {
       "author": {
         "name": "📋 Logs - Atlantic",
         "url": null,
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+        "icon_url": "https://cdn.discordapp.com/attachments/498298608920035328/498461135591178240/2e435a7132130a0cdca32cd29932ed10.png"
       },
       "fields": [
         {
@@ -103,7 +103,7 @@ bot.on("channelDelete", async channel => {
 
 bot.on("messageDelete", async message => {
 
-  let msg = message.guild.channels.find(`name`, "📋event-log");
+  let msg = message.guild.channels.find(`name`, "📋logs");
   msg.send({
 
     "embed": {
