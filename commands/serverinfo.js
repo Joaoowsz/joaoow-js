@@ -1,4 +1,8 @@
 const Discord = require("discord.js");
+const moment = require("moment");
+moment.locale("PT-BR")
+moment(user.createdAt).format("LLLL")
+moment(user.joinedAt).format("LLLL")
 
 module.exports.run = async (bot, message, args) => {
     let sicon = message.guild.iconURL;
@@ -26,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
             },
             "fields": [
                 {
-                    "name": ":crown: Owner",
+                    "name": ":crown: Dono",
                     "value": message.guild.owner.displayName,
                     "inline": true
                   },
@@ -36,15 +40,25 @@ module.exports.run = async (bot, message, args) => {
                   "inline": true
                 },
                 {
-                    "name": ":raising_hand: Users",
+                    "name": ":raising_hand: Usuários",
                     "value": message.guild.memberCount,
                     "inline": true
                   },
+                {
+                "name": ":robot: Bots",
+                "value": message.guild.clientCount,
+                "inline": true
+              },
                   {
-                  "name": ":clipboard: Creation date",
+                  "name": ":clipboard: Criado em",
                   "value": message.guild.createdAt,
                   "inline": true
-                }
+                },
+                {
+                "name": ":clipboard: Entrei em",
+                "value": message.guild.joinedAt,
+                "inline": true
+              }
               ]
             }})
         }
