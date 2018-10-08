@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     try{
         await rMember.send("Olá <@" + rMember.id + ">, foi removido o seu cargo ``" + gRole.name + "`` no servidor ``AtlanticMC - Official``.")
       }catch(e){
-        message.channel.send("O membro <@" + rMember.id + "> teve o cargo ``" + gRole.name + "``.")
+        message.channel.send("O membro <@" + rMember.id + "> teve o cargo ``" + gRole.name + "`` retirado.")
       }
 }
 
