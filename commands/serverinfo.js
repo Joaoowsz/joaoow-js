@@ -1,8 +1,5 @@
 const Discord = require("discord.js");
 const moment = require("moment");
-moment.locale("PT-BR")
-moment(user.createdAt).format("LLLL")
-moment(user.joinedAt).format("LLLL")
 
 module.exports.run = async (bot, message, args) => {
     let sicon = message.guild.iconURL;
