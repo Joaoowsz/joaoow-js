@@ -38,13 +38,23 @@ module.exports.run = async (bot, message, args) => {
                 {
                     "name": ":raising_hand: Usuários",
                     "value": message.guild.memberCount,
-                    "inline": true
+                    "inline": false
                   },
                 {
                 "name": ":robot: Bots",
                 "value": "1",
                 "inline": true
-              }
+              },
+              {
+              "name": ":earth_americas: Região",
+              "value": "Brasil :flag_br:",
+              "inline": false
+            },
+            {
+            "name": ":no_entry_sign: Nível de Verificação",
+            "value": "Nenhum",
+            "inline": true
+          }
               ]
             }})
         }
