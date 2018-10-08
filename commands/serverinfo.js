@@ -46,17 +46,7 @@ module.exports.run = async (bot, message, args) => {
                   },
                 {
                 "name": ":robot: Bots",
-                "value": message.guild.clientCount,
-                "inline": true
-              },
-                  {
-                  "name": ":clipboard: Criado em",
-                  "value": message.guild.createdAt,
-                  "inline": true
-                },
-                {
-                "name": ":clipboard: Entrei em",
-                "value": message.guild.joinedAt,
+                "value": "1",
                 "inline": true
               }
               ]
