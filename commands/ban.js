@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Este usuário não pode ser banido.");
 
-    let banEmbed = new ({
+    let banEmbed = new message.send({
       "embed": {
         "description": "**Usuário punido:** " + bUser + " \n**Staffer:** <@" + message.author.id + "> \n**Motivo:** " + bReason,
         "url": null,
@@ -19,7 +19,8 @@ module.exports.run = async (bot, message, args) => {
         },
         "author": {
           "name": "⛔ Punições - AtlanticMC",
-          "url": "https://discordapp.com"
+          "url": "https://discordapp.com",
+          "icon_url": null
         }
       }
     })
