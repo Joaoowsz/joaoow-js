@@ -2,21 +2,21 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!kUser) return message.channel.send("Use: +kick <@username> <reason>");
+    if(!kUser) return message.channel.send("``❗`` Use: !kick <@username> <motivo>.");
     let kReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have permission!");
-    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("This user can not be banned!");
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Você não possui permissão para executar esse comando.");
+    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Esse usuário não pode ser punido!");
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("**Punishments - Intel Corporation**")
     .setColor("#e56b00")
-    .addField("Punishment: Expulsion")
-    .addField("Punished user:", `${kUser} - **ID:** ${kUser.id}`)
-    .addField("Punished for:", `<@${message.author.id}> - **ID:** ${message.author.id}`)
-    .addField("Reason for punishment:", kReason);
+    .addField("Punição:", `Expulsão`)
+    .addField("Usuário punido:", `<@${kUser}>`)
+    .addField("Staffer:", `<@${message.author.id}>`)
+    .addField("Motivo:", kReason);
 
-    let punicoesChannel = message.guild.channels.find(`name`, "⛔punishments");
-    if(!punicoesChannel) return message.channel.send("Channel of punishments not found.");
+    let punicoesChannel = message.guild.channels.find(`name`, "⛔punições");
+    if(!punicoesChannel) return message.channel.send("❌ Canal de punições não encontrado.");
 
     message.guild.member(kUser).kick(kReason);
     punicoesChannel.send(kickEmbed);
