@@ -2,17 +2,17 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!rUser) return message.channel.send("Use: +report <@username> <reason>.");
+    if(!rUser) return message.channel.send("Use: !appeal <seu nick> <nick do staffer que lhe baniu> <print do banimento>.\nEx: ``!appeal Joaoowsz MisteriumZ https://printdobanimento``");
     let rreason = args.join(" ").slice(22);
 
     let reportEmbed = new Discord.RichEmbed()
-    .setDescription("**Reports - Intel Corporation**")
+    .setDescription("**Appeal - Atlantic**")
     .setColor("#36d2f9")
-    .addField("reported user:", `${rUser} - **ID:** ${rUser.id}`)
-    .addField("reported by:", `${message.author} - **ID:** ${message.author.id}`)
-    .addField("Reason for report:", rreason);
+    .addField("Nick:", message.member.get(args[1]))
+    .addField("Staffer:", message.member.get(args[2]))
+    .addField("Print do banimento:", message.member.get(args[3])) 
 
-    let reportschannel = message.guild.channels.find(`name`, "❗reports");
+    let reportschannel = message.guild.channels.find(`name`, "❗appeal");
     if(!reportschannel) return message.channel.send("Report channel not found.");
 
 
@@ -22,5 +22,5 @@ module.exports.run = async (bot, message, args) => {
 }
  
 module.exports.help = {
-  name: "report"
+  name: "appeal"
 }
