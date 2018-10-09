@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[4]));
     if(!rUser) return message.channel.send("Use: !appeal <seu nick> <nick do staffer que lhe baniu> <print do banimento>.\nEx: ``!appeal Joaoowsz MisteriumZ https://printdobanimento``");
     let rreason = args.join(" ").slice(22);
 
