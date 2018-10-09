@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 let user = message.mentions.members.first() || message.author;
 let membrog = message.guild.member(user)
-var horario = moment(membrog.joinedAt).format('LL')
+var horario = moment(membrog.createdAt).format('LL')
 
 module.exports.run = async (bot, message, args) => {
     message.channel.send({
@@ -44,7 +44,7 @@ module.exports.run = async (bot, message, args) => {
                     "inline": true
                   },
                 {
-                "name": ":star2: Entrei aqui em",
+                "name": ":star2: Criado em",
                 "value": message.guild.horario,
                 "inline": true
               },
