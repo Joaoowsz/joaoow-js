@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
                 "text": message.author.username
             },
             "thumbnail": {
-                "url": "https://cdn.discordapp.com/attachments/458045910383853569/460254575564161024/ee15ee2204940b811508b13eac92068d.jpg"
+                "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
             },
             "image": {
                 "url": null
@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
             "author": {
                 "name": message.guild.name,
                 "url": "",
-                "icon_url": "https://cdn.discordapp.com/emojis/314003252830011395.png?v=1"
+                "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
             },
             "fields": [
                 {
