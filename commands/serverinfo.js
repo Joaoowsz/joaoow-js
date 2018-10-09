@@ -1,7 +1,10 @@
 const Discord = require("discord.js");
 
+let user = message.mentions.members.first() || message.author;
+let membrog = message.guild.member(user)
+var horario = moment(membrog.joinedAt).format('LL')
+
 module.exports.run = async (bot, message, args) => {
-    let sicon = message.guild.iconURL;
     message.channel.send({
         "embed": {
             "title": ``,
@@ -38,17 +41,17 @@ module.exports.run = async (bot, message, args) => {
                 {
                     "name": ":raising_hand: Usuários",
                     "value": message.guild.memberCount,
-                    "inline": false
+                    "inline": true
                   },
                 {
-                "name": ":robot: Bots",
-                "value": "1",
+                "name": ":star2: Entrei aqui em",
+                "value": message.guild.horario,
                 "inline": true
               },
               {
               "name": ":earth_americas: Região",
               "value": "Brasil :flag_br:",
-              "inline": false
+              "inline": true
             },
             {
             "name": ":no_entry_sign: Nível de Verificação",
