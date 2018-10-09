@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 let user = message.mentions.members.first() || message.author;
 let membrog = message.guild.member(user)
-var horario = moment(membrog.createdAt).format('LL')
+let horario = moment(membrog.createdAt).format('LL')
 
 module.exports.run = async (bot, message, args) => {
     message.channel.send({
