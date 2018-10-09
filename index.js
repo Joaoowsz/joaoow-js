@@ -31,7 +31,6 @@ bot.on("ready", async () => {
 bot.on("guildMemberAdd", async member => {
   console.log(`${member.id} entrou no servidor!`);
 
-let role = member.guilds.roles.find(`name`,'👤Membro');
 member.guilds.roles.find(a => a.name =='👤Membro');
 member.addRole(role)
 
