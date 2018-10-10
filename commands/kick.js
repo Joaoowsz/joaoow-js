@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     .setDescription("**Punições - AtlanticMC**")
     .setColor("#e56b00")
     .addField("Punição:", `Expulsão`)
-    .addField("Usuário punido:", `<@${kUser}>`)
+    .addField("Usuário punido:", `${kUser}`)
     .addField("Staffer:", `<@${message.author.id}>`)
     .addField("Motivo:", kReason);
 

@@ -11,8 +11,8 @@ module.exports.run = async (bot, message, args) => {
     .setDescription("**Punições - AtlanticMC**")
     .setColor("#f95336")
     .addField("Punição:", `Banimento`)
-    .addField("Usuário punido:", `<@${bUser}>`)
-    .addField("Staffer:", `<@${message.author.id}>}`)
+    .addField("Usuário punido:", `${bUser}`)
+    .addField("Staffer:", `<@${message.author.id}>`)
     .addField("Motivo:", bReason);
 
     let punicoeschannel = message.guild.channels.find(`name`, "⛔punições");

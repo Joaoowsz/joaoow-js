@@ -34,31 +34,31 @@ message.author.send({
     "fields": [
       {
         "name": "announcements",
-        "value": "Formatoo: *!anunciar <mensagem>*\nChannel: *<#494264769835040778>* \nFunção: *Use para enviar um anúncio.*\n "
+        "value": "Formato: *!anunciar <mensagem>*\nChannel: *<#494264769835040778>* \nFunção: *Use para enviar um anúncio.*\n "
       },
       {
         "name": "Clear",
-        "value": "Formatoo: *!clear <quantidade>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para apagar algumas mensagens.*\n "
+        "value": "Formato: *!clear <quantidade>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para apagar algumas mensagens.*\n "
       },
       {
         "name": "Banishment",
-        "value": "Formatoo: *!ban <@username> <motivo>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para banir um membro do servidor.*\n "
+        "value": "Formato: *!ban <@username> <motivo>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para banir um membro do servidor.*\n "
       },
       {
         "name": "Expulsion",
-        "value": "Formatoo: *!kick <@username> <motivo>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para expulsar um membro do servidor.*\n "
+        "value": "Formato: *!kick <@username> <motivo>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para expulsar um membro do servidor.*\n "
       },
       {
         "name": "Silencing",
-        "value": "Formatoo: *!tempmute <@username> <segundos>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para mutar um membro temporáriamente.*\n "
+        "value": "Formato: *!tempmute <@username> <segundos>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para mutar um membro temporáriamente.*\n "
       },
       {
         "name": "Questions",
-        "value": "Formatoo: *!perguntar @Atlantic <pergunta>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
+        "value": "Formato: *!perguntar @Atlantic <pergunta>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
       },
       {
         "name": "Avatar",
-        "value": "Formatoo: *!avatar <@username>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para ver o avatar de alguém.*\n "
+        "value": "Formato: *!avatar <@username>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para ver o avatar de alguém.*\n "
       },
       {
         "name": "Dog",
@@ -70,7 +70,7 @@ message.author.send({
       },
       {
         "name": "SetGroup",
-        "value": "Formatoo: *!setgroup <@username>* <cargo>\nChannel: *<#494267583801982976>*  \nFunção: *Use para setar um cargo em alguém.*\n "
+        "value": "Formato: *!setgroup <@username>* <cargo>\nChannel: *<#494267583801982976>*  \nFunção: *Use para setar um cargo em alguém.*\n "
       },
       {
         "name": "ServerInfo",
