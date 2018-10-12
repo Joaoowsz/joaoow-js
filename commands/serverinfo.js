@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
             "author": {
                 "name": message.guild.name,
                 "url": "",
-                "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+                "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
             },
             "fields": [
                 {

@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
   await(rMember.addRole(gRole.id));
 
   try{
-    await rMember.send("Olá <@" + rMember.id + ">, você recebeu o cargo ``" + gRole.name + "`` no servidor ``AtlanticMC - Official``.")
+    await rMember.send("Olá <@" + rMember.id + ">, você recebeu o cargo ``" + gRole.name + "`` no servidor ``" + server.name + "``.")
   }catch(e){
     message.channel.send("O membro <@" + rMember.id + "> foi setado como ``" + gRole.name + "``.")
   }

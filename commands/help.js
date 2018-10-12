@@ -5,21 +5,21 @@ module.exports.run = async (bot, message, args) => {
   message.channel.send({
     "embed": {
       "description": "Enviei a lista de comandos no seu privado, " + message.author.username + ".",
-      "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
+      "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
       "color": 7990292,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
-        "text": "Atlantic"
+        "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+        "text": "Ability"
       }
   }
   }); 
 
 message.author.send({
-"content": "Lista de comandos - Atlantic",
+"content": "Lista de comandos - Ability",
   "embed": {
     "description": "**Prefix = ``!``**",
-    "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
+    "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
     "color": 7419530,
     "timestamp": new Date(),
     "footer": {
@@ -27,13 +27,13 @@ message.author.send({
       "text": "Bot desenvolvido por @Joaoowsz#1568"
     },
     "author": {
-      "name": "Lista de comandos - Atlantic",
-      "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
-      "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+      "name": "Lista de comandos - Ability",
+      "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+      "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
     },
     "fields": [
       {
-        "name": "announcements",
+        "name": "Anúncios",
         "value": "Formato: *!anunciar <mensagem>*\nChannel: *<#494264769835040778>* \nFunção: *Use para enviar um anúncio.*\n "
       },
       {
@@ -41,19 +41,19 @@ message.author.send({
         "value": "Formato: *!clear <quantidade>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para apagar algumas mensagens.*\n "
       },
       {
-        "name": "Banishment",
+        "name": "Banimento",
         "value": "Formato: *!ban <@username> <motivo>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para banir um membro do servidor.*\n "
       },
       {
-        "name": "Expulsion",
+        "name": "Expulsão",
         "value": "Formato: *!kick <@username> <motivo>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para expulsar um membro do servidor.*\n "
       },
       {
-        "name": "Silencing",
+        "name": "Silenciamento",
         "value": "Formato: *!tempmute <@username> <segundos>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para mutar um membro temporáriamente.*\n "
       },
       {
-        "name": "Questions",
+        "name": "Perguntar",
         "value": "Formato: *!perguntar @Atlantic <pergunta>*\nChannel: *<#494267583801982976>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
       },
       {
@@ -83,12 +83,12 @@ message.author.send({
     
   "embed": {
     "description": message.author.username + ", não foi possível enviar a lista de comandos no seu privado pois a sua DM está fechada.",
-    "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
+    "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
     "color": 7990292,
     "timestamp": new Date(),
     "footer": {
-      "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
-      "text": "Atlantic"
+      "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+      "text": "Ability"
     }
 }
 

@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Esse usuário não pode ser punido.");
 
     let banEmbed = new Discord.RichEmbed()
-    .setDescription("**Punições - AtlanticMC**")
+    .setDescription("**Punições - Ability**")
     .setColor("#f95336")
     .addField("Punição:", `Banimento`)
     .addField("Usuário punido:", `${bUser}`)

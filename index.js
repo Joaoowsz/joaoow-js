@@ -24,7 +24,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("atlanticmc.com.br", {type: "PLAYING"});
+  bot.user.setActivity("Conecte-se: abilitynetwork.com.br", {type: "PLAYING"});
 
 });
 
@@ -37,19 +37,19 @@ member.addRole(role)
   let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
   welcomechannel.send({
     "embed": {
-      "description": `\n**IP:** atlanticmc.com.br \n**Twitter:** https://twitter.com/RedeAtlantic \n**Loja:** ~~Em breve~~`,
+      "description": `\n**IP:** abilitynetwork.com.br \n**Twitter:** https://twitter.com/AbilityKits \n**Loja:** ~~Em breve~~ \n**Fórum:** ~~Em breve~~`,
       "url": null,
       "color": 9964474,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473",
-        "text": "Rede Atlantic"
+        "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+        "text": "Ability Network"
       },
       "thumbnail": {
-        "url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+        "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
       },
       "author": {
-        "name": `Olá ${member.displayName}, seja bem vindo ao AtlanticMC - Official!`,
+        "name": `Olá ${member.displayName}, seja bem vindo ao ${server.name}!`,
         "icon_url": member.displayAvatarURL,
         "url": member.displayAvatarURL
       }
@@ -69,9 +69,9 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Atlantic",
+        "name": "📋 Logs - Ability",
         "url": null,
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+        "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
       },
       "fields": [
         {
@@ -95,9 +95,9 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Atlantic",
+        "name": "📋 Logs - Ability",
         "url": null,
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+        "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
       },
       "fields": [
         {
@@ -122,9 +122,9 @@ bot.on("messageDelete", async message => {
         "text": "Autor: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - Atlantic",
+        "name": "📋 Logs - Ability",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://images-ext-1.discordapp.net/external/0vwGKF6HeV7-sSeRwOQjfWzCslPkN8FS9rf-0AJMFT8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/496949356151439360/2e435a7132130a0cdca32cd29932ed10.png?width=473&height=473"
+        "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
       },
       "fields": [
         {
