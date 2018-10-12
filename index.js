@@ -34,7 +34,7 @@ bot.on("guildMemberAdd", async member => {
   let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
   welcomechannel.send({
     "embed": {
-      "description": `\n**IP:** abilitynetwork.com.br \n**Twitter:** https://twitter.com/AbilityKits \n**Loja:** ~~Em breve~~ \n**Fórum:** ~~Em breve~~`,
+      "description": `\n**IP:** abilitynetwork.com.br \n**Twitter:** https://twitter.com/AbilityKits \n**Loja:** http://loja-abilitykits.buycraft.net/ \n**Fórum:** ~~Em breve~~`,
       "url": null,
       "color": 9964474,
       "timestamp": new Date(),
