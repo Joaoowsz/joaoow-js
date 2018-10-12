@@ -31,9 +31,6 @@ bot.on("ready", async () => {
 bot.on("guildMemberAdd", async member => {
   console.log(`${member.id} entrou no servidor!`);
 
-member.guilds.role.find(a => a.name =='❃ Membros');
-member.addRole(role)
-
   let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
   welcomechannel.send({
     "embed": {
