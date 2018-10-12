@@ -27,6 +27,7 @@ module.exports.run = async (bot, message, args) => {
   }
     })
   }
+  message.channel.send("everyone")
 
 module.exports.help = {
     name: "anunciar"
