@@ -5,8 +5,8 @@ module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ Você não possui permissão para executar esse comando.");
     let botmessage = args.join(" ");
     message.delete().catch();
-    message.channel.send("@everyone" + {
-      "content": "@everyone",
+    message.channel.send("everyone")
+    message.channel.send({
   "embed": {
     "url": null,
     "color": 1752220,
