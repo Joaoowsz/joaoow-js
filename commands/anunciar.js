@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     ]
   }
     })
-    message.channel.send("@everyone")
+    message.channel.send("<@&454031616814088192>")
   }
 
 module.exports.help = {
