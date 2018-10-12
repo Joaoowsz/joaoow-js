@@ -49,7 +49,7 @@ member.addRole(role)
         "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
       },
       "author": {
-        "name": `Olá ${member.displayName}, seja bem vindo ao ${server.name}!`,
+        "name": `Olá ${member.displayName}, seja bem vindo ao Discord oficial da rede Ability Network!`,
         "icon_url": member.displayAvatarURL,
         "url": member.displayAvatarURL
       }

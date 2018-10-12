@@ -54,7 +54,7 @@ message.author.send({
       },
       {
         "name": "Perguntar",
-        "value": "Formato: *!perguntar @Atlantic <pergunta>*\nChannel: *<#454033929536667649>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
+        "value": "Formato: *!perguntar @Ability <pergunta>*\nChannel: *<#454033929536667649>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
       },
       {
         "name": "Avatar",
