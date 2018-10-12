@@ -13,9 +13,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("Punição:", `Banimento`)
     .addField("Usuário punido:", `${bUser}`)
     .addField("Staffer:", `<@${message.author.id}>`)
-    .addField("Motivo:", bReason)
-    .addThumbnail("https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png");
-
+    .addField("Motivo:", bReason);
+    
     let punicoeschannel = message.guild.channels.find(`name`, "⛔punições");
     if(!punicoeschannel) return message.channel.send("❌ Canal de punições não encontrado.");
 
