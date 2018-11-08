@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
       "text": "Atenciosamente, " + message.author.username
     },
     "thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
+      "url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png"
     },
     "fields": [
       {
@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     ]
   }
     })
-    message.channel.send("<@&454031616814088192>")
+    message.channel.send("@everyone")
   }
 
 module.exports.help = {

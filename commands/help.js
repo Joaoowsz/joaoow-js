@@ -5,21 +5,21 @@ module.exports.run = async (bot, message, args) => {
   message.channel.send({
     "embed": {
       "description": "Enviei a lista de comandos no seu privado, " + message.author.username + ".",
-      "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+      "url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
       "color": 7990292,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
-        "text": "Ability"
+        "icon_url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
+        "text": "Joaoow.js"
       }
   }
   }); 
 
 message.author.send({
-"content": "Lista de comandos - Ability",
+"content": "Lista de comandos - Joaoow.js",
   "embed": {
     "description": "**Prefix = ``!``**",
-    "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+    "url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
     "color": 7419530,
     "timestamp": new Date(),
     "footer": {
@@ -28,8 +28,8 @@ message.author.send({
     },
     "author": {
       "name": "Lista de comandos - Ability",
-      "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
-      "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png"
+      "url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
+      "icon_url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png"
     },
     "fields": [
       {
@@ -83,12 +83,12 @@ message.author.send({
     
   "embed": {
     "description": message.author.username + ", não foi possível enviar a lista de comandos no seu privado pois a sua DM está fechada.",
-    "url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
+    "url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
     "color": 7990292,
     "timestamp": new Date(),
     "footer": {
-      "icon_url": "https://cdn.discordapp.com/attachments/459725360490348554/500127117464567848/Ability.png",
-      "text": "Ability"
+      "icon_url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
+      "text": "Joaoow.js"
     }
 }
 
