@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 
-if(message.channel.id != "521150947519496208") return message.channel.send(", use o #bots!");
 module.exports.run = async (bot, message, args) => {
     message.channel.send({
         "embed": {

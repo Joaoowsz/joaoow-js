@@ -22,9 +22,11 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+if(message.channel.id != "521150947519496208") return message.channel.send(", use o #bots!");
+
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("fademc.com.br", {type: "PLAYING"});
+  bot.user.setActivity("loja.fademc.com.br", {type: "PLAYING"});
 
 });
 
@@ -87,6 +89,7 @@ bot.on("channelDelete", async channel => {
   })
 
 })
+
 
 bot.on("messageDelete", async message => {
 
