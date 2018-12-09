@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
 
-
+if(message.channel.id != "521150947519496208") return message.channel.send(", use o #bots!")
 module.exports.run = async (bot, message, args) => {
     message.channel.send({
         "embed": {
             "title": ``,
-            "description": "",
+            "description": "Veja algumas informações sobre o servidor!\n\n**IP:** fademc.com.br\n**Loja:** https://loja.fademc.com.br\n\nO **FadeMC** é um servidor de Minecraft.",
             "url": "",
             "color": 3553598,  
             "timestamp": new Date(),
@@ -23,32 +23,10 @@ module.exports.run = async (bot, message, args) => {
                 "name": message.guild.name,
                 "url": "",
                 "icon_url": "https://i.imgur.com/Stenp0u.png"
-            },
-            "fields": [
-                {
-                    "name": ":crown: Dono",
-                    "value": message.guild.owner.displayName,
-                    "inline": true
-                  },
-                {
-                  "name": ":computer: ID",
-                  "value": message.guild.id,
-                  "inline": true
-                },
-                {
-                    "name": ":raising_hand: Usuários",
-                    "value": message.guild.memberCount,
-                    "inline": true
-                  },
-              {
-              "name": ":earth_americas: Região",
-              "value": "Brasil :flag_br:",
-              "inline": true
             }
-              ]
             }})
         }
 
 module.exports.help = {
-  name:"serverinfo"
+  name:"fade"
 }
