@@ -5,11 +5,11 @@ module.exports.run = async (bot, message, args) => {
   message.channel.send({
     "embed": {
       "description": "Enviei a lista de comandos no seu privado, " + message.author.username + ".",
-      "url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
+      "url": "https://i.imgur.com/Stenp0u.png",
       "color": 7990292,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/498307385966985257/501131620749672458/dc.png",
+        "icon_url": "https://i.imgur.com/Stenp0u.png",
         "text": "Joaoow.js"
       }
   }
@@ -23,8 +23,8 @@ message.author.send({
     "color": 7419530,
     "timestamp": new Date(),
     "footer": {
-      "icon_url": message.author.displayAvatarURL,
-      "text": "Equipe de desenvolvimento do discord."
+      "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521165311618187266/kisspng-discord-logo-computer-icons-reddit-zongzi-14-0-1-5ae3de249d00b2.2332496115248829806431.jpg",
+      "text": "Equipe de desenvolvimento do discord"
     },
     "author": {
       "name": "Lista de comandos - FadeMC",
@@ -87,8 +87,8 @@ message.author.send({
     "color": 7990292,
     "timestamp": new Date(),
     "footer": {
-      "icon_url": "https://i.imgur.com/Stenp0u.png",
-      "text": "Equipe de desenvolvimento - FadeMC"
+      "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521165311618187266/kisspng-discord-logo-computer-icons-reddit-zongzi-14-0-1-5ae3de249d00b2.2332496115248829806431.jpg",
+      "text": "Equipe de desenvolvimento do discord"
     }
 }
 
