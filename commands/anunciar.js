@@ -18,13 +18,13 @@ module.exports.run = async (bot, message, args) => {
       "url": "https://i.imgur.com/Stenp0u.png"
     }, 
     "author": {
-      "name": "#Fade:",
+      "name": null,
       "url": null,
       "icon_url": "https://i.imgur.com/Stenp0u.png"
     },
      "fields": [
       {
-        "name": " ",
+        "name": "#Fade:",
         "value": botmessage
       }
     ]
