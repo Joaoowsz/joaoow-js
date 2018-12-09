@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
   }); 
 
 message.author.send({
-"content": "Lista de comandos - Joaoow.js",
+"content": "Lista de comandos - FadeMC",
   "embed": {
     "description": "**Prefix = ``!``**",
     "url": "https://i.imgur.com/Stenp0u.png",
