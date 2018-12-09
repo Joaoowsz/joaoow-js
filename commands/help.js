@@ -23,7 +23,7 @@ message.author.send({
     "color": 7419530,
     "timestamp": new Date(),
     "footer": {
-      "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521165311618187266/kisspng-discord-logo-computer-icons-reddit-zongzi-14-0-1-5ae3de249d00b2.2332496115248829806431.jpg",
+      "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png",
       "text": "Equipe de desenvolvimento do discord"
     },
     "author": {
