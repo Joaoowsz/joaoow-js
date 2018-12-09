@@ -34,7 +34,7 @@ message.author.send({
     "fields": [
       {
         "name": "Anúncios",
-        "value": "Formato: *!anunciar <mensagem>*\nChannel: *<#521161401700450313>* \nFunção: *Use para enviar um anúncio.*\n "
+        "value": "Formato: *!anunciar @everyone <mensagem>*\nChannel: *<#521161401700450313>* \nFunção: *Use para enviar um anúncio.*\n "
       },
       {
         "name": "Clear",
@@ -49,12 +49,8 @@ message.author.send({
         "value": "Formato: *!kick <@username> <motivo>*\nChannel: *<#521150947519496208*  \nFunção: *Use para expulsar um membro do servidor.*\n "
       },
       {
-        "name": "Silenciamento",
-        "value": "Formato: *!tempmute <@username> <segundos>*\nChannel: *<#521150947519496208>*  \nFunção: *Use para mutar um membro temporáriamente.*\n "
-      },
-      {
         "name": "Perguntar",
-        "value": "Formato: *!perguntar @FadeMC <pergunta>*\nChannel: *<#521150947519496208>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
+        "value": "Formato: *!perguntar <pergunta>*\nChannel: *<#521150947519496208>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
       },
       {
         "name": "Avatar",
