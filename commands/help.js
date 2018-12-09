@@ -46,7 +46,7 @@ message.author.send({
       },
       {
         "name": "Expulsão",
-        "value": "Formato: *!kick <@username> <motivo>*\nChannel: *<#521150947519496208*  \nFunção: *Use para expulsar um membro do servidor.*\n "
+        "value": "Formato: *!kick <@username> <motivo>*\nChannel: *<#521150947519496208>*  \nFunção: *Use para expulsar um membro do servidor.*\n "
       },
       {
         "name": "Perguntar",
