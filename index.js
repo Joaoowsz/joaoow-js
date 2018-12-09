@@ -31,7 +31,7 @@ bot.on("ready", async () => {
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
 
-  var role = member.guild.roles('&521195582044504064')
+  var role = member.guild.roles.find(`name`, 'Membro')
 
   member.addRole(role)
 });
