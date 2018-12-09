@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
       "text": "Atenciosamente, " + message.author.username
     },
     "thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png"
+      "url": "https://i.imgur.com/Stenp0u.png"
     },
     "fields": [
       {

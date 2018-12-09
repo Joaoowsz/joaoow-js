@@ -24,36 +24,9 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("IP: redefreaky.com", {type: "PLAYING"});
+  bot.user.setActivity("fademc.com.br", {type: "PLAYING"});
 
 });
-
-bot.on("guildMemberAdd", async member => {
-  console.log(`${member.id} entrou no servidor!`);
-
-  let welcomechannel = member.guild.channels.find(`name`, "🌞bem-vindo");
-  welcomechannel.send({
-    "embed": {
-      "description": `\n**IP:** redefreaky.com \n**Twitter:** https://twitter.com/RedeFreaky \n**Loja:** http://redefreaky.com/`,
-      "url": null,
-      "color": 9964474,
-      "timestamp": new Date(),
-      "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png",
-        "text": member.Count + " membros no servidor!"
-      },
-      "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png"
-      },
-      "author": {
-        "name": `Olá ${member.displayName}, seja bem vindo ao Discord oficial da Rede Freaky!`,
-        "icon_url": member.displayAvatarURL,
-        "url": member.displayAvatarURL
-      }
-      }
-    }
-  );
-})
 
 bot.on("channelCreate", async channel => {
 
@@ -66,9 +39,9 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Rede Freaky",
+        "name": "📋 Logs - FadeMC",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png"
+        "icon_url": "https://i.imgur.com/Stenp0u.png"
       },
       "fields": [
         {
@@ -92,9 +65,9 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Rede Freaky",
+        "name": "📋 Logs - FadeMC",
         "url": null,
-        "icon_url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png"
+        "icon_url": "https://i.imgur.com/Stenp0u.png"
       },
       "fields": [
         {
@@ -119,9 +92,9 @@ bot.on("messageDelete", async message => {
         "text": "Autor: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - Rede Freaky",
+        "name": "📋 Logs - FadeMC",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://cdn.discordapp.com/attachments/506884169960390657/509887928835506176/Logo_-_PNG.png"
+        "icon_url": "https://i.imgur.com/Stenp0u.png"
       },
       "fields": [
         {
