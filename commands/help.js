@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
       "timestamp": new Date(),
       "footer": {
         "icon_url": "https://i.imgur.com/Stenp0u.png",
-        "text": "Joaoow.js"
+        "text": "Equipe de desenvolvimento do discord"
       }
   }
   }); 
