@@ -24,7 +24,7 @@ message.author.send({
     "timestamp": new Date(),
     "footer": {
       "icon_url": message.author.displayAvatarURL,
-      "text": "Bot desenvolvido por @Joaoowsz#1568"
+      "text": "Equipe de desenvolvimento do discord."
     },
     "author": {
       "name": "Lista de comandos - FadeMC",
