@@ -54,7 +54,7 @@ bot.on("channelCreate", async channel => {
       "fields": [
         {
           "name": "Um canal foi criado.",
-          "value": "Canal criado: " + channel
+          "value": "Canal: " + channel
         }
       ]
     }
@@ -80,7 +80,7 @@ bot.on("channelDelete", async channel => {
       "fields": [
         {
           "name": "Um canal foi deletado.",
-          "value": "Canal deletado: " + channel.name
+          "value": "Canal: " + channel.name
         }
       ]
     }
@@ -107,7 +107,7 @@ bot.on("messageDelete", async message => {
       "fields": [
         {
           "name": "Uma mensagem foi deletada.",
-          "value": "**Mensagem deletada:** " + message.content
+          "value": "**Conteúdo:** " + message.content
         }
       ]
     }
