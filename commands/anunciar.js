@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete().catch();
     message.channel.send({
   "embed": {
+    "description": botmessage,
     "url": null,
     "color": 1752220,
     "timestamp": new Date(),
@@ -21,13 +22,7 @@ module.exports.run = async (bot, message, args) => {
       "name": "#Fade:",
       "url": null,
       "icon_url": "https://i.imgur.com/Stenp0u.png"
-    },
-    "fields": [
-      {
-        "name": " ",
-        "value": botmessage
-      }
-    ]
+    }
   }
     })
   }
