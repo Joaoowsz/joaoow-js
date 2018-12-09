@@ -3,7 +3,7 @@ const superagent = require("superagent");
 
 module.exports.run = async (bot, message, args) => {
 
-    if(message.channel.id != "521150947519496208") return message.channel.send(", use o #bots!")
+    if(message.channel.id != "521150947519496208") return message.channel.send(", use o #bots!");
     let {body} = await superagent
     .get(`https://random.dog/woof.json`);
 
