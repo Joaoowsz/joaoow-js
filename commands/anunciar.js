@@ -1,9 +1,11 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+  
+  message.channel.send("@everyone")
 
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ Você não possui permissão para executar esse comando.");
-    let botmessage = args.join(" ");
+    let botmessage = args.slice(1).join(" ");
     message.delete().catch();
     message.channel.send({
   "embed": {
@@ -25,7 +27,6 @@ module.exports.run = async (bot, message, args) => {
     ]
   }
     })
-    message.channel.send("@everyone")
   }
 
 module.exports.help = {
