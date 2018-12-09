@@ -28,6 +28,14 @@ bot.on("ready", async () => {
 
 });
 
+bot.on('guildMemberAdd', member => {
+  console.log('User ' + member.user.username + ' entrou no servidor!')
+
+  var role = member.guild.roles.find('name', 'Membro')
+
+  member.addRole(role)
+});
+
 bot.on("channelCreate", async channel => {
 
   let sChannel = channel.guild.channels.find(`name`, "📋logs");
