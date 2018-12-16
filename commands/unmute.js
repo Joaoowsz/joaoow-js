@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send({
      "embed": {
-      "description": `**${mUser}** foi mutado por **<@${message.author.id}>**\n**Motivo:** ${mReason}`,
+      "description": `**${mUser}** teve o mute revogado por **<@${message.author.id}>**.}`,
       "url": `https://discordapp.com`,
       "color": 15105570,
       "footer": {
