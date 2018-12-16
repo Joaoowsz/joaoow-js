@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send({
      "embed": {
-      "description": `**${mUser}** teve o mute revogado por **<@${message.author.id}>**.}`,
+      "description": `**${mUser}** teve o mute revogado por **<@${message.author.id}>**.`,
       "url": `https://discordapp.com`,
       "color": 15105570,
       "footer": {
@@ -35,6 +35,7 @@ module.exports.run = async (bot, message, args) => {
    
     var role = message.guild.roles.find(`name`, 'Mutado')
 
+    if(mUser.roles.has(role)) return message.channel.send("``❗`` Este usuário já está mutado.");
   await(mUser.removeRole(role));
 
 }
