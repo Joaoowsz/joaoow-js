@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
     if(!rMember) return message.channel.send("``❗`` Use: ``!removegroup <@username> <cargo>``.");
     let role = args.join(" ").slice(22);
-    if(!role) return message.channel.send("`❗`` Especifique o cargo.");
+    if(!role) return message.channel.send("``❗`` Especifique o cargo.");
     let gRole = message.guild.roles.find(`name`, role);
     if(!gRole) return message.channel.send("``❌`` Cargo não encontrado.");
 
