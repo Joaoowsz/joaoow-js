@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     let evento = args[0];
     let horario = args[1];
     let ip = args[2];
-    let premiacao = args.slice(3);
+    let premiacao = args.slice(3).join(" ");
     let canal = message.guild.channels.find(`name`,'🎮eventos');
     message.channel.send({
         "embed": {
