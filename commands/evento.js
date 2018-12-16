@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
 
     if(!message.member.hasPermission("MANAGE_ROLES")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
-    if(!message.member.send) return message.channel.send("``❗`` Use: ``!evento [Evento] [Horário] [IP] [Premiação]``\n**Exemplo:** !evento Mini-Fade 20:00 a1.hg.fademc.com.br VIP - 1 Dia")
+    if(!message.member.send) return message.reply ("``❗`` Use: ``!evento [Evento] [Horário] [IP] [Premiação]``\n**Exemplo:** !evento Mini-Fade 20:00 a1.hg.fademc.com.br VIP - 1 Dia")
     let evento = args.slice(1).join(" ");
     let horario = args.slice(2).join(" ");
     let ip = args.slice(3).join(" ");
