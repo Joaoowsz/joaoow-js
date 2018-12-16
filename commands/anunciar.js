@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete().catch();
     message.channel.send({
   "embed": {
+    "description": botmessage,
     "url": null,
     "color": 1752220,
     "timestamp": new Date(),
@@ -18,16 +19,10 @@ module.exports.run = async (bot, message, args) => {
       "url": "https://i.imgur.com/Stenp0u.png"
     }, 
     "author": {
-      "name": null,
+      "name": "🔔 Rede FadeMC informa:",
       "url": null,
-      "icon_url": "https://i.imgur.com/Stenp0u.png"
-    },
-     "fields": [
-      {
-        "name": "🔔 Rede FadeMC informa:",
-        "value": botmessage
-      }
-    ]
+      "icon_url": "https://images-ext-1.discordapp.net/external/YFjo9kmtQ0r3WM1KGn-ga2k9g5i6obaYK-f9KK9z5SU/%3Fv%3D1/https/cdn.discordapp.com/emojis/480512404229193736.gif"
+    }
   }
     })
   }
