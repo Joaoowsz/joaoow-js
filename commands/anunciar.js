@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
+
+message.channel.send("``❗`` Use: ``!anunciar @everyone <mensagem>``.");
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ Você não possui permissão para executar esse comando.");
     let botmessage = args.slice(1).join(" ");
     message.delete().catch();
