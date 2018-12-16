@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let mUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!mUser) return message.channel.send("``❗`` Use: ``!mute <@username> <motivo>``");
     let mReason = args.join(" ").slice(22);
-    var staffrole = message.guild.roles.find(`name`, '☀️ Staff')
+    let staffrole = message.guild.roles.find(`name`, '☀️ Staff')
     if(!message.roles.has(staffrole)) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     if(mUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Esse usuário não pode ser mutado!");
 
