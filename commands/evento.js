@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
 
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
-    let evento = args[];
+    let evento = args[0];
     let horario = args[1];
     let ip = args[2];
     let premiacao = args.slice(3);
