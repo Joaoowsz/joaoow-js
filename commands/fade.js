@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send({
         "embed": {
             "title": ``,
-            "description": "Veja algumas informações sobre o servidor!\n\n**IP:** fademc.com.br\n**Loja:** https://loja.fademc.com.br\n\nO **FadeMC** é um servidor de Minecraft.",
+            "description": "Veja algumas informações sobre o servidor!\n\n**IP:** fademc.com.br\n**Loja:** https://loja.fademc.com.br\n**Site:** https://fademc.com.br\n**Twitter Principal:** https://twitter.com/_FadeMC\n**Twitter da equipe:** https://twitter.com/FadeMCStaff\n**Twitter de bans:** https://twitter.com/FadeMCBans\n\n Qualquer dúvida relacionada a rede, entre em contato com a nossa equipe.",
             "url": "",
             "color": 3553598,  
             "timestamp": new Date(),
