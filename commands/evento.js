@@ -4,10 +4,10 @@ module.exports.run = async (bot, message, args) => {
 
 
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
-    let evento = args[1];
-    let horario = args[2];
-    let ip = args[3];
-    let premiacao = args[4];
+    let evento = args.slice[1].join(" ");
+    let horario = args.slice[2].join(" ");
+    let ip = args.slice[3].join(" ");
+    let premiacao = args.slice[4].join(" ");
     let canal = message.guild.channels.find(`name`,'🎮eventos');
     message.channel.send({
         "embed": {
