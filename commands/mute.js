@@ -11,6 +11,8 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send(`${mUser} foi mutado por <@${message.author.id}>.\nMotivo: ${mReason}`)
 
+    let role = member.guild.roles.find(`name`,'Mutado');
+
     if(mUser.roles.has("Mutado")) return message.channel.send("``❗`` Este usuário já está mutado.");
   await(mUser.addRole("Mutado"));
 
