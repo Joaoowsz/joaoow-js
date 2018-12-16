@@ -5,10 +5,10 @@ module.exports.run = async (bot, message, args) => {
     
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
     if(!args[0]) return message.channel.send("``❗`` Use: ``!evento [evento] [horário] [IP] [Premiação]``\nExemplo: ``!evento Mini-Fade 20:00 a1.hg.fademc.com.br VIP - 2 DIAS``")
-    let evento = args[0];
-    let horario = args[1];
-    let ip = args[2];
-    let premiacao = args.slice(3).join(" ");
+    let evento = args[1];
+    let horario = args[2];
+    let ip = args[3];
+    let premiacao = args.slice(4).join(" ");
     let canal = message.guild.channels.find(`name`,'🎮eventos');
     canal.send({
         "embed": {
