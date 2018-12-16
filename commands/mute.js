@@ -20,17 +20,6 @@ module.exports.run = async (bot, message, args) => {
       }
     }
   })
-  let mutechat = message.guild.channel.find(`name`,'🚷punições-discord');
-  mutechat.send({
-    "embed": {
-    "description": `**${mUser}** foi mutado por **<@${message.author.id}>**\n**Motivo:** ${mReason}`,
-    "url": `https://discordapp.com`,
-    "color": 15105570,
-    "footer": {
-      "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png",
-      "text": "Equipe de moderação - FadeMC"
-    }
-  }})
   
    
     var role = message.guild.roles.find(`name`, 'Mutado')
