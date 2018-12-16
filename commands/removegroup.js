@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
+    if(!message.member.hasPermission("MANAGE_ROLES")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
     let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
     if(!rMember) return message.channel.send("``❗`` Use: ``!removegroup <@username> <cargo>``.");
     let role = args.join(" ").slice(22);
