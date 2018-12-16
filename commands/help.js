@@ -34,7 +34,7 @@ message.author.send({
     "fields": [
       {
         "name": "Anúncios",
-        "value": "Formato: *!anunciar @everyone <mensagem>*\nChannel: *<#521161401700450313>* \nFunção: *Use para enviar um anúncio.*\n "
+        "value": "Formato: *!anunciar @everyone <mensagem>*\nChannel: *<#518869387399266327>* \nFunção: *Use para enviar um anúncio.*\n "
       },
       {
         "name": "Clear",
