@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
       "url": "https://i.imgur.com/Stenp0u.png"
     }, 
     "author": {
-      "name": "🔔 Rede FadeMC informa:",
+      "name": " Rede Fade informa:",
       "url": null,
       "icon_url": "https://images-ext-1.discordapp.net/external/YFjo9kmtQ0r3WM1KGn-ga2k9g5i6obaYK-f9KK9z5SU/%3Fv%3D1/https/cdn.discordapp.com/emojis/480512404229193736.gif"
     }
