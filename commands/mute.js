@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
 
     let role = member.guild.roles.find(`name`,'Mutado');
 
-    if(mUser.roles.has("Mutado")) return message.channel.send("``❗`` Este usuário já está mutado.");
+    if(mUser.roles.has(role)) return message.channel.send("``❗`` Este usuário já está mutado.");
   await(mUser.addRole(role));
 
 }
