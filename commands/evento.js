@@ -10,8 +10,8 @@ module.exports.run = async (bot, message, args) => {
     let ip = args[2];
     let premiacao = args.slice(3).join(" ");
     let canal = message.guild.channels.find(`name`,'🎮eventos');
+    canal.send("@everyone")
     canal.send({
-        "content": "@everyone ",
         "embed": {
             "description": `**Para participar basta se conectar ao IP informado abaixo**.\n\n**Evento:** ${evento}\n**Horário:** ${horario}\n**IP:** ${ip}\n**Premiação:** ${premiacao}`,
             "url": "https://i.imgur.com/Stenp0u.png",
