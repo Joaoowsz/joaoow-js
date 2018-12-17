@@ -2,10 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    var role = member.guild.roles.find(`name`, '🔔 Notificar');
-
-if(member.roles.has(role)) return message.channel.send("``❗`` Você já tem o cargo ``🔔 Notificar``.");
-await(member.addRole(role)); 
+member.addRole("&524015252015153152")
 
 message.channel.send("Você recebeu a tag ``🔔 Notificar``");
 }
