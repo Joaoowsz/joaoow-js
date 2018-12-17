@@ -45,12 +45,12 @@ bot.on('message', async message => {
   const comando = args.shift().toLowerCase();
   if(comando === "notificar") {
   }
-});
 
   var nrole = member.guild.roles.find(a => a.name === "🔔 Notificar")
 
 message.member.addRole(nrole)
 message.channel.send("Agora você possui o cargo ``🔔 Notificar``!")
+});
 
 
 bot.on("channelCreate", async channel => {
