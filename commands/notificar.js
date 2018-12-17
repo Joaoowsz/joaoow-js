@@ -2,7 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    var role = member.guild.roles.find(`name`, 'Membro');
+    var role = member.guild.roles.find(`name`, '🔔 Notificar');
+    var member = message.guild.member;
 
     member.addRole(role)
     message.channel.send("Agora você possui a tag ``🔔 Notificar``, caso queira retirar, use ``!notificar`` novamente!");
