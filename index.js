@@ -37,21 +37,6 @@ bot.on('guildMemberAdd', member => {
   member.addRole(role)
 });
 
-bot.on('message', async message => {
-
-  if(!message.content.startsWith(config.prefix)) return;
-
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-  const comando = args.shift().toLowerCase();
-  if(comando === "notificar") {
-  }
-
-  var nrole = member.guild.roles.find(a => a.name === "🔔 Notificar")
-
-message.member.addRole(nrole)
-message.channel.send("Agora você possui o cargo ``🔔 Notificar``!")
-});
-
 
 bot.on("channelCreate", async channel => {
 
