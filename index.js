@@ -37,6 +37,13 @@ bot.on('guildMemberAdd', member => {
   member.addRole(role)
 });
 
+bot.on('message', async message => {
+  var nrole = member.guild.roles.find(a => a.name === "🔔 Notificar")
+
+message.member.addRole(nrole)
+message.channel.send("Agora você possui o cargo ``🔔 Notificar``!")
+});
+
 bot.on("channelCreate", async channel => {
 
   let sChannel = channel.guild.channels.find(`name`, "📋logs");
