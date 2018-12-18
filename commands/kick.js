@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Staffer:", `<@${message.author.id}>`)
     .addField("Motivo:", kReason);
 
-    let punicoesChannel = message.guild.channels.find(`name`, "⛔punições");
+    let punicoesChannel = message.guild.channels.find(`name`, "🚷punições-discord");
     if(!punicoesChannel) return message.channel.send("❌ Canal de punições não encontrado.");
 
     message.guild.member(kUser).kick(kReason);
