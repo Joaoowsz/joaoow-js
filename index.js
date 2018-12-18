@@ -25,7 +25,6 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
   bot.user.setActivity("loja.fademc.com.br", {type: "PLAYING"});
-  if(message.channel.id != "521150947519496208") return message.channel.send(", use o #bots!")
 
 });
 

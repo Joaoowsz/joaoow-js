@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    if(message.channel.id != `523838496691978240`,`523586087696990208`) return message.channel.send(" ");
+    if(message.channel.id != "523838496691978240") return message.channel.send(" ");
+    if(message.channel.id != "523586087696990208") return message.channel.send(" ");
     if(!args[1]) return message.reply("Use: !perguntar <pergunta>");
     let replies = ["Sim", "Não", "Sei não em..."];
 
