@@ -30,9 +30,10 @@
   "homepage": "https://github.com/heroku/node-js-getting-started#readme",
   "author": "",
   "dependencies": {
-    "discord.js": "^11.3.2",
+    "discord.js": "^11.4.2",
     "fortnite": "^4.1.1",
     "fs": "0.0.1-security",
+    "opusscript": "0.0.6",
     "superagent": "^3.8.3",
     "ytdl-core": "^0.28.3"
   }
