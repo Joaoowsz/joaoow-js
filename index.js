@@ -32,15 +32,11 @@ bot.on('guildMemberAdd', member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
   
   var logs = channel.guild.channels.find(`name`, '📋logs');
-
   var role = member.guild.roles.find(`name`, 'Membro')
-
-  member.addRole(role) && logs.send(`:inbox_tray: | <@${member.user.username}> entrou no servidor.`);
+  logs.send(`<@${member.user.username}> entrou no servidor.`);
+  member.addRole(role)
 });
 
-bot.on('guildMemberRemove', member => {
-  logs.send(`:outbox_tray: | <@${member.user.username}> saiu do servidor.`)
-});
 
 bot.on('message', async message => {
   let member = message.member;
