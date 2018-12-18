@@ -35,8 +35,7 @@ bot.on('guildMemberAdd', member => {
 
   var role = member.guild.roles.find(`name`, 'Membro')
 
-  member.addRole(role)
-  logs.send(`:inbox_tray: | <@${member.user.username}> entrou no servidor.`);
+  member.addRole(role) && logs.send(`:inbox_tray: | <@${member.user.username}> entrou no servidor.`);
 });
 
 bot.on('guildMemberRemove', member => {
