@@ -38,8 +38,13 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', async message => {
+
+  if(message.channel.id != "523838496691978240","523586087696990208") return message.channel.send(" ");
+})
+
+bot.on('message', async message => {
   let member = message.member;
-  let blacklisted = ['mush','mushmc.com.br','mushmc','https','http','hypixel','.com','.tk','smile','zenix',];
+  let blacklisted = ['mush','mushmc.com.br','mushmc','https','http','hypixel','.com','.tk','smile','zenix','wombo','lothus','empire','wave'];
   if(member.hasPermission('MANAGE_MESSAGES')) return 
   let foundInText = false;
   for (var i in blacklisted) {
