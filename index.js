@@ -31,10 +31,10 @@ bot.on("ready", async () => {
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
   
-  var logs = message.guild.channels.find(`name`, '📋logs');
-  var role = member.guild.roles.find(`name`, 'Membro')
-  logs.send(`<@${member.user.username}> entrou no servidor.`);
-  member.addRole(role)
+  var logs = channel.guild.channels.find(`name`, '📋logs');
+  logs.send(`${member} entrou no servidor.`);
+  var role = member.guild.roles.find(`name`, 'Membro');
+  member.addRole(role);
 });
 
 
