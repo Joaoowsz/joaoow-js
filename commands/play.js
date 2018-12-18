@@ -3,7 +3,7 @@ const ytdl = require('ytdl-core');
 module.exports.run = async (bot, message, args) => {
 
     if(!message.member.voiceChannel) return message.channel.send("❗ | Você precisa estar conectado a um canal de voz.");
-    if(!message.bot.me.voiceChannel) return message.chanel.send("❌ | O BOT já está conectado a um canal de voz.");
+    if(!message.guild.me.voiceChannel) return message.chanel.send("❌ | O BOT já está conectado a um canal de voz.");
     if(args[0]) return message.channel.send("❗ | Insira o URL que deseja tocar.");
     let validate = await ytdl.validateURL(args[0]);
     if(!validate) return message.channel.send("❗ | Insira um URL válido.");
