@@ -1,8 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-  if(message.channel.id != "523838496691978240") return message.channel.send(" ");
-    if(message.channel.id != "523586087696990208") return message.channel.send(" ");
+  if(message.channel.id != "523838496691978240" && message.channel.id != "523586087696990208") return message.channel.send(" ");
   message.channel.send({
     "embed": {
       "description": "Enviei a lista de comandos no seu privado, " + message.author.username + ".",
