@@ -57,6 +57,7 @@ bot.on("channelCreate", async channel => {
   sChannel.send({
     "embed": {
       "color": 3066993,
+      "timestamp": new Date(),
       "footer": {
         "icon_url": null,
         "text": null
@@ -83,6 +84,7 @@ bot.on("channelDelete", async channel => {
   sChannel.send({
     "embed": {
       "color": 15158332,
+      "timestamp": new Date(),
       "footer": {
         "icon_url": null,
         "text": null
@@ -112,6 +114,7 @@ bot.on("messageDelete", async message => {
 
     "embed": {
       "color": 9452521,
+      "timestamp": new Date(),
       "footer": {
         "icon_url": message.author.displayAvatarURL,
         "text": "Autor: " + message.author.tag
@@ -129,8 +132,34 @@ bot.on("messageDelete", async message => {
       ]
     }
   })
+  })
 
-})
+  bot.on("messageUpdate"), async message => {
+    let logchat = message.guild.channels.find(`name`, "📋logs");
+
+    logchat.send({
+        "embed": {
+          "color": 9452521,
+          "timestamp": new Date(),
+          "footer": {
+          "icon_url": message.author.displayAvatarURL,
+          "text": "Autor: " + message.author.tag
+          },
+          "author": {
+            "name": "📋 Logs - FadeMC",
+            "url": message.author.displayAvatarURL,
+            "icon_url": "https://i.imgur.com/Stenp0u.png"
+          },
+          "fields": [
+            {
+              "name": "Uma mensagem foi editada.",
+              "value": "**Mensagem antiga:** " + oldMessage + "\n\n**Mensagem nova:** " + newMessage
+            }
+          ]
+        }
+    })
+   
+  }
 
 
 bot.on("message", async message => {
