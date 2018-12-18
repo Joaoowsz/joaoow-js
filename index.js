@@ -153,7 +153,7 @@ bot.on("messageDelete", async message => {
           "fields": [
             {
               "name": "Uma mensagem foi editada.",
-              "value": "**Mensagem antiga:** " + oldMessage + "\n\n**Mensagem nova:** " + newMessage
+              "value": "**Mensagem antiga:** " + message.oldMessage + "\n\n**Mensagem nova:** " + message.newMessage
             }
           ]
         }
