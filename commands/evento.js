@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    
+  if(message.channel.id != "523586087696990208") return message.channel.send(" ");
     if(!message.member.hasPermission("MANAGE_ROLES")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
     if(!args[0]) return message.channel.send("``❗`` Use: ``!evento [evento] [horário] [IP] [Premiação]``\nExemplo: ``!evento Mini-Fade 20:00 a1.hg.fademc.com.br VIP - 2 DIAS``")
     let evento = args[0];
