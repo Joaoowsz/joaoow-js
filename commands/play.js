@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     let info = await ytdl.getInfo(args[0]);
     let connection = await message.member.voiceChannel.join();
     let dispatcher = await connection.play(ytdl(args[0], { filter: 'audioonly' }));
-    message.channel.send(`Tocando agora: ${info.title}`)
+    message.channel.send(`Tocando agora: ${info.title}`);
 }
 
 module.exports.help = {
