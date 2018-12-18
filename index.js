@@ -39,7 +39,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', async message => {
   
-  let blacklisted = ['mush'];
+  let blacklisted = ['mush','mushmc.com.br','mushmc','https','http','hypixel','.com','.tk'];
 
   let foundInText = false;
   for (var i in blacklisted) {
