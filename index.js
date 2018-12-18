@@ -90,6 +90,20 @@ bot.on("channelDelete", async channel => {
 
 })
 
+bot.on('message', async message => {
+  
+  let blacklisted = ['mush'];
+
+  let foundInText = false;
+  for (var i in blacklisted) {
+    if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
+  }
+  if (foundInText) {
+    message.delete();
+    message.channel.send(' ')
+  };
+  
+
 
 bot.on("messageDelete", async message => {
 
@@ -133,7 +147,7 @@ bot.on("message", async message => {
 });
 
 bot.login(process.env.BOT_TOKEN);
-//Discord.Colors = {
+//*Discord.Colors = {
 //    DEFAULT: 0,
 //    AQUA: 1752220,
 //    GREEN: 3066993,
