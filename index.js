@@ -37,6 +37,19 @@ bot.on('guildMemberAdd', member => {
   member.addRole(role)
 });
 
+bot.on('message', async message => {
+  
+  let blacklisted = ['mush'];
+
+  let foundInText = false;
+  for (var i in blacklisted) {
+    if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
+  }
+  if (foundInText) {
+    message.delete();
+    message.channel.send(' ');
+  }
+})
 
 bot.on("channelCreate", async channel => {
 
@@ -89,19 +102,6 @@ bot.on("channelDelete", async channel => {
   })
 
 })
-
-bot.on('message', async message => {
-  
-  let blacklisted = ['mush'];
-
-  let foundInText = false;
-  for (var i in blacklisted) {
-    if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
-  }
-  if (foundInText) {
-    message.delete();
-    message.channel.send(' ')
-  };
   
 
 
@@ -168,4 +168,3 @@ bot.login(process.env.BOT_TOKEN);
 //    DARK_RED: 10038562,
 //    DARK_GREY: 9936031,
 //    LIGHT_GREY: 12370112,
-//    DARK_NAVY: 2899536
