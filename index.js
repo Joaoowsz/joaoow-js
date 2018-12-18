@@ -38,7 +38,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', async message => {
   let member = message.member;
-  let blacklisted = ['mush','mushmc.com.br','mushmc','https','http','hypixel','.com','.tk','smile','zenix','wombo','lothus','empire','wave'];
+  let blacklisted = ['mush','mushmc.com.br','mushmc','https','http','hypixel','.com','.tk','smile','zenix','wombo','lothus','empire','wave','teck'];
   if(member.hasPermission('MANAGE_MESSAGES')) return 
   let foundInText = false;
   for (var i in blacklisted) {
