@@ -134,33 +134,6 @@ bot.on("messageDelete", async message => {
   })
   })
 
-  bot.on("messageUpdate"), async message => {
-    let logchat = message.guild.channels.find(`name`, "📋logs");
-
-    logchat.send({
-        "embed": {
-          "color": 9452521,
-          "timestamp": new Date(),
-          "footer": {
-          "icon_url": message.author.displayAvatarURL,
-          "text": "Autor: " + message.author.tag
-          },
-          "author": {
-            "name": "📋 Logs - FadeMC",
-            "url": message.author.displayAvatarURL,
-            "icon_url": "https://i.imgur.com/Stenp0u.png"
-          },
-          "fields": [
-            {
-              "name": "Uma mensagem foi editada.",
-              "value": "**Mensagem antiga:** " + message.oldMessage + "\n\n**Mensagem nova:** " + message.newMessage
-            }
-          ]
-        }
-    })
-   
-  }
-
 
 bot.on("message", async message => {
   if(message.author.bot) return;
