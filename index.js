@@ -33,6 +33,7 @@ bot.on('guildMemberAdd', member => {
   
   var role = member.guild.roles.find(`name`, 'Membro')
   member.addRole(role)
+  bot.channels.get("523683124308213781").send(`**<@${member}> entrou no servidor.`)
 });
 
 
