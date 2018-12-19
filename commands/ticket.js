@@ -18,13 +18,13 @@ module.exports.run = async (bot, message) => {
     }, 300000);
     let guild = message.guild;
     message.reply(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
-    let canal = message.guild.channels.find(`name`,'🎟tickets')
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
   .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúvida:** ${args}`)
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
+  let canal = message.guild.channels.find(`name`,'🎟tickets')
     canal.send({embed2});
     const embed = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)

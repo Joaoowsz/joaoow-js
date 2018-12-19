@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
     let member = message.member;
     let tUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if (!tUser) return message.channel.send("❗ | Utilize: ``!responder <resposta>``");
+    if (!tUser) return message.channel.send("❗ | Utilize: ``!responder <@username> <resposta>``");
     let tResposta = args.slice(1).join(" ");
     if(!tResposta) return message.channel.send(`O usuário ${tUser} foi respondido com sucesso.`);
     
