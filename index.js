@@ -127,7 +127,7 @@ bot.on("messageDelete", async message => {
       "fields": [
         {
           "name": "Uma mensagem foi deletada.",
-          "value": "**Conteúdo:** " + message.content + "/n**Canal:** " + message.channel.name
+          "value": "**Conteúdo:** " + message.content + "\n**Canal:** " + message.channel.name
         }
       ]
     }
