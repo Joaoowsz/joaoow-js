@@ -25,13 +25,14 @@ module.exports.run = async (bot, message) => {
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
-    member.send({embed2});
+    
     const embed = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
   .addField('Ticket:', `**Autor:** ${message.author.username}\n**Dúvida:** ${args}\n**Status:** Aberto`)
   .setThumbnail(message.author.displayAvatarURL)
   .setColor("#ffd700");
-    cnl.send({embed})
+  message.author.send({embed});
+    cnl.send({embed2})
   .catch(e => logger.error(e))
 };
 
