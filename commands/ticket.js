@@ -6,10 +6,10 @@ module.exports.run = async (bot, message) => {
     let args = message.content.split(' ').slice(1).join(' ');
     message.delete();
     if (cooldown.has(message.author.id && message.guild.id)) {
-        return message.channel.send('❌ | Você precisa esperar 5 minutos para enviar um novo ticket!');
+        return message.reply('**[COOLDOWN]** Sending tickets has **5 Minutes** Cooldown!');
     }
     if (args.length < 1) {
-        return message.channel.send("❗ | Utilize: ``!ticket <dúvida>``");
+        return message.reply(`You must give me something to report first ${message.author}`);
     }
 
     cooldown.add(message.author.id && message.guild.id);
@@ -18,20 +18,20 @@ module.exports.run = async (bot, message) => {
     }, 300000);
     let guild = message.guild;
     const cnl = bot.channels.get('524820515148398602');
-    message.reply(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
+    message.channel.send(`:heavy_check_mark: | Seu ticket foi enviado, em breve iremos será respondido.`);
     const embed2 = new Discord.RichEmbed()
-  .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
-  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Full Dúvida:** ${args}\n\n**Para responder use ``!responder <@username> <mensagem>``**`)
+  .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
+  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúuvida:** ${args}\n**Status:** Aberto`)
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
-    canal.send({embed2});
+    message.channel.send({embed: embed2});
     const embed = new Discord.RichEmbed()
-  .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
-  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúvida:** ${args}\n**Status:** Aberto`)
+  .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
+  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúvida:** ${args}\n\n**Para responder use: ``!responder <@username> <mensagem>``.`)
   .setThumbnail(message.author.displayAvatarURL)
   .setColor("#ffd700");
-    message.author.send({embed})
+    cnl.send({embed})
   .catch(e => logger.error(e))
 };
 
