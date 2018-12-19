@@ -17,14 +17,14 @@ module.exports.run = async (bot, message) => {
         cooldown.delete(message.author.id && message.guild.id);
     }, 300000);
     let guild = message.guild;
+    const cnl = bot.channels.get('524820515148398602');
     message.reply(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
-  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúvida:** ${args}`)
+  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Full Dúvida:** ${args}\n\n**Para responder use ``!responder <@username> <mensagem>``**`)
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
-  let canal = message.guild.channels.find(`name`,'🎟tickets')
     canal.send({embed2});
     const embed = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
