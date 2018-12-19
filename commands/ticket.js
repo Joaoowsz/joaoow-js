@@ -18,7 +18,7 @@ module.exports.run = async (bot, message) => {
     }, 300000);
     let guild = message.guild;
     const cnl = bot.channels.get('524820515148398602');
-    message.channel.send(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
+    message.channel.send(`✔ | Seu ticket foi enviado, em breve será respondido.`);
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
   .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúuvida:** ${args}\n**Status:** Aberto`)

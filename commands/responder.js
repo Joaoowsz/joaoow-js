@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send("✔ | O Ticket de " + tUser.username + " foi respondido com sucesso! ")
     tUser.send({
   "embed": {
-    "description": "**Autor:** " + tUser.username + "\n**Resposta:** " + "\n**Staffer:** " + message.author.username + "\n**Status:** Fechado",
+    "description": "**Autor:** " + tUser.name + "\n**Resposta:** " + "\n**Staffer:** " + message.author.username + "\n**Status:** Fechado",
     "url": null,
     "color": 1752220,
     "timestamp": new Date(),
