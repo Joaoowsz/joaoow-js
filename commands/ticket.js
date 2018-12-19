@@ -28,7 +28,7 @@ module.exports.run = async (bot, message) => {
     message.channel.send({embed: embed2});
     const embed = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
-  .addField('Ticket:',`**Autor:** ${message.author.tag} \n**Dúvida:** ${args} \n\n**Para responder use: !responder <@username> <mensagem>.`)
+  .addField('Ticket:',`**Autor:** ${message.author.tag} \n**Dúvida:** ${args} \n\n**Para responder use: ``!responder <@username> <mensagem>``**.`)
   .setThumbnail(message.author.displayAvatarURL)
   .setColor("#ffd700");
     cnl.send(embed)
