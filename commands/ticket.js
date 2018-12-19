@@ -25,10 +25,10 @@ module.exports.run = async (bot, message) => {
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
-    message.channel.send({embed: embed2});
+    message.author.send({embed: embed2});
     const embed = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
-  .addField('Ticket:',`**Autor:** ${message.author.tag} \n**Dúvida:** ${args} \n\n**Para responder use: !responder <@username> <mensagem>.**`)
+  .addField('Ticket:',`**Autor:** ${message.author.tag}\n**ID:** ${message.author.id} \n**Dúvida:** ${args} \n\n**Para responder use: !responder <@username> <mensagem>**`)
   .setThumbnail(message.author.displayAvatarURL)
   .setColor("#ffd700");
     cnl.send(embed)
