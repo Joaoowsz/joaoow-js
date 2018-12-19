@@ -24,7 +24,7 @@ module.exports.run = async (bot, message) => {
   .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúuvida:** ${args}\n**Status:** Aberto`)
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
-  .setColor(16711728);
+  .setColor("#8bf970");
     message.author.send({embed: embed2});
     const embed = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
