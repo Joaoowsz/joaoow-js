@@ -27,11 +27,27 @@ module.exports.run = async (bot, message) => {
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor("#8bf970");
     message.author.send({embed: embed2});
-    const embed = new Discord.RichEmbed()
-  .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
-  .addField('Ticket:',`**Autor:** ${message.author.tag}\n**ID:** ${message.author.id} \n**Dúvida:** ${args} \n\n**Para responder use: !responder <@username> <mensagem>**`)
-  .setThumbnail(message.author.displayAvatarURL)
-  .setColor("#ffd700");
+    let embed = ({
+    "embed": {
+        "description": "**Autor:** " + message.author.tag + "\n**ID:**: " + message.author.id + "\n**Dúvida:** " + args + "\n\n**Para responder use: !responder <@username> <mensagem>**",
+        "url": null,
+        "color": 1752220,
+        "timestamp": new Date(),
+        "footer": {
+          "icon_url": message.author.displayAvatarURL,
+          "text": "Atenciosamente, " + message.author.username
+        },
+        "thumbnail": {
+          "url": tUser.displayAvatarURL
+        }, 
+        "author": {
+          "name": "Seu ticket foi respondido!",
+          "url": null,
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+    })
+    cnl.send("<@&518866737387667471> <@&518866542390280192>")
     cnl.send(embed)
   .catch(e => logger.error(e))
 };
