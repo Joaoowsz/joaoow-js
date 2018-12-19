@@ -17,7 +17,7 @@ module.exports.run = async (bot, message) => {
         cooldown.delete(message.author.id && message.guild.id);
     }, 300000);
     let guild = message.guild;
-    const cnl = message.channel.channels.find(`name`, 'tickets');
+    const cnl = bot.channels.get('524805327166636048');
     message.reply(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
@@ -25,11 +25,10 @@ module.exports.run = async (bot, message) => {
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
-  member.send(embed2);
-    message.channel.send({embed});
+    member.send({embed2});
     const embed = new Discord.RichEmbed()
-  .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
-  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúvida:** ${args}`)
+  .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
+  .addField('Ticket:', `**Autor:** ${message.author.tag}\n**Dúvida:** ${args}\n**Status:** Aberto`)
   .setThumbnail(message.author.displayAvatarURL)
   .setColor("#ffd700");
     cnl.send({embed})
@@ -37,5 +36,5 @@ module.exports.run = async (bot, message) => {
 };
 
 module.exports.help = {
-    name: 'ticket'
+    name: 'Ticket'
 };
