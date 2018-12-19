@@ -25,14 +25,14 @@ module.exports.run = async (bot, message) => {
   .setThumbnail("https://i.imgur.com/Stenp0u.png")
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
-    
+  cnl.send({embed2})
     const embed = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
   .addField('Ticket:', `**Autor:** ${message.author.username}\n**Dúvida:** ${args}\n**Status:** Aberto`)
   .setThumbnail("https://i.imgur.com/Stenp0u.png")
   .setColor("#ffd700");
-  message.author.send({embed});
-    cnl.send({embed2})
+  message.author.send({embed})
+    
   .catch(e => logger.error(e))
 };
 
