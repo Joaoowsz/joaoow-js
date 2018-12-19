@@ -38,7 +38,7 @@ module.exports.run = async (bot, message) => {
           "text": "Atenciosamente, " + message.author.username
         },
         "thumbnail": {
-          "url": tUser.displayAvatarURL
+          "url": message.author.displayAvatarURL
         }, 
         "author": {
           "name": "Seu ticket foi respondido!",
@@ -47,8 +47,7 @@ module.exports.run = async (bot, message) => {
         }
       }
     })
-    cnl.send("<@&518866737387667471> <@&518866542390280192>")
-    cnl.send(embed)
+    cnl.send(embed) && cnl.send("<@&518866737387667471> <@&518866542390280192>")
   .catch(e => logger.error(e))
 };
 
