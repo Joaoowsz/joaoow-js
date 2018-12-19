@@ -31,7 +31,7 @@ module.exports.run = async (bot, message) => {
   .addField('Ticket:', "**Autor:** " + message.author.tag + "\n**Dúvida:** " + args + "\n\n**Para responder use: !responder <@username> <mensagem>.")
   .setThumbnail(message.author.displayAvatarURL)
   .setColor("#ffd700");
-    cnl.send({embed})
+    cnl.send(embed)
   .catch(e => logger.error(e))
 };
 
