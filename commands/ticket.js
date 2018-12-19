@@ -35,7 +35,7 @@ module.exports.run = async (bot, message) => {
         "timestamp": new Date(),
         "footer": {
           "icon_url": message.author.displayAvatarURL,
-          "text": "Atenciosamente, " + message.author.username
+          "text": null
         },
         "thumbnail": {
           "url": message.author.displayAvatarURL
