@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
+    let member = message.member;
     let tUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if (!tUser) return message.channel.send("❗ | Utilize: ``!responder <resposta>``");
     let tResposta = args.slice(1).join(" ");
