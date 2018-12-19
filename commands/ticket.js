@@ -47,7 +47,8 @@ module.exports.run = async (bot, message) => {
         }
       }
     })
-    cnl.send(embed) && cnl.send("<@&518866737387667471> <@&518866542390280192>")
+    cnl.send(embed)
+    cnl.send("<@&518866737387667471> <@&518866542390280192>")
   .catch(e => logger.error(e))
 };
 
