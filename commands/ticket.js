@@ -17,7 +17,7 @@ module.exports.run = async (bot, message) => {
         cooldown.delete(message.author.id && message.guild.id);
     }, 300000);
     let guild = message.guild;
-    let canal = message.guild.channels.find(`name`,'🎟tickets');
+    let canal = channel.guild.channels.find(`name`,'🎟tickets');
     message.reply(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.tag}`, message.author.displayAvatarURL)
