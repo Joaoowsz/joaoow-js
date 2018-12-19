@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     let punicoes = message.guild.channels.find(`name`, '🚷punições-discord');
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     if(mUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Esse usuário não pode ser mutado!");
-
+    message.delete().catch();
     message.channel.send("✔ | Usuário mutado.")
     punicoes.send({
      "embed": {
