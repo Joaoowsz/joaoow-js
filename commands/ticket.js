@@ -17,18 +17,18 @@ module.exports.run = async (bot, message) => {
         cooldown.delete(message.author.id && message.guild.id);
     }, 300000);
     let guild = message.guild;
-    const cnl = message.guild.channels.find(`name`, 'tickets');
+    let cnl = message.guild.channels.find(`name`,"tickets");
     message.reply(`✔ | Seu ticket foi enviado, em breve iremos será respondido.`);
     const embed2 = new Discord.RichEmbed()
-  .setAuthor(`Ticket de ${message.author.username}`, message.author.displayAvatarURL)
-  .addField('Ticket:', `**Autor:** ${message.author.username}\n**Dúvida:** ${args}`)
+  .setAuthor(`Ticket de ${message.author.name}`, message.author.displayAvatarURL)
+  .addField('Ticket:', `**Autor:** ${message.author.name}\n**Dúvida:** ${args}`)
   .setThumbnail("https://i.imgur.com/Stenp0u.png")
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
   cnl.send({embed2})
     const embed = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
-  .addField('Ticket:', `**Autor:** ${message.author.username}\n**Dúvida:** ${args}\n**Status:** Aberto`)
+  .addField('Ticket:', `**Autor:** ${message.author.name}\n**Dúvida:** ${args}\n**Status:** Aberto`)
   .setThumbnail("https://i.imgur.com/Stenp0u.png")
   .setColor("#ffd700");
   message.author.send({embed})
