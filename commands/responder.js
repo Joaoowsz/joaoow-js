@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    
+    if(message.channel.id != "523586087696990208") return message.channel.send(" ");
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ | Você não possui permissão para executar esse comando.");
     let tUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if (!tUser) return message.channel.send("❗ | Utilize: ``!responder <@username> <resposta>``");

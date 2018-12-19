@@ -3,6 +3,7 @@ const moment = require('moment');
 
 const cooldown = new Set();
 module.exports.run = async (bot, message) => {
+    if(message.channel.id != "523838496691978240" && message.channel.id != "523586087696990208") return message.channel.send(" ");
     let args = message.content.split(' ').slice(1).join(' ');
     message.delete();
     if (cooldown.has(message.author.id && message.guild.id)) {
