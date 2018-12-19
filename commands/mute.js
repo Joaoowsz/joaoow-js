@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let mUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!mUser) return message.channel.send("``❗`` Use: ``!mute <@username> <motivo>``");
     let mReason = args.join(" ").slice(22);
-    let punicoes = message.guild.channels.find(`name`, '🚷punições-discord')
+    let punicoes = message.guild.channels.find(`name`, '🚷punições-discord');
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     if(mUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Esse usuário não pode ser mutado!");
 
@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
    
     var role = message.guild.roles.find(`name`, 'Mutado')
 
-    if(mUser.roles.has(role)) return message.channel.send("``❗`` Este usuário já está mutado.");
+    if(!muser.roles.has(role)) return message.channel.send("❌ | Esse usuário já está mutado.");
   await(mUser.addRole(role));
 
 }
