@@ -10,6 +10,7 @@ module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     if(mUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Esse usuário não pode ser mutado!");
 
+    message.channel.send("✔ | Usuário mutado.")
     punicoes.send({
      "embed": {
       "description": `**${mUser}** foi mutado por **<@${message.author.id}>**\n**Motivo:** ${mReason}`,
