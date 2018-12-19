@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    let ticket = message.guild.channel.find(`name`, '🎐ticket');
+    let ticket = bot.channels.get('525010571465326615');
     ticket.send({
         "embed": {
             "description": "**\nComo funciona?**\nBasta digitar !ticket <sua dúvida> no <#523838496691978240>.",
