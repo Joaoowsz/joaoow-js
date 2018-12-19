@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
+    if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     let ticket = bot.channels.get('518869758272208919');
     ticket.send({
         "embed": {
