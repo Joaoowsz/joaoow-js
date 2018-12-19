@@ -8,10 +8,10 @@ module.exports.run = async (bot, message, args) => {
     if (!tUser) return message.channel.send("❗ | Utilize: ``!responder <@username> <resposta>``");
     let tMessage = args.slice(1).join(" ");
     message.delete().catch();
-    message.channel.send("✔ | O Ticket de " + tUser.tag + " foi respondido com sucesso! ")
+    message.channel.send("✔ | O Ticket de " + tUser.user.username + " foi respondido com sucesso! ")
     tUser.send({
   "embed": {
-    "description": "**Autor:** " + tUser.tag + "\n**Resposta:** " + tMessage + "\n**Staffer:** " + message.author.username + "\n**Status:** Fechado",
+    "description": "**Autor:** " + tUser.user.username + "\n**Resposta:** " + tMessage + "\n**Staffer:** " + message.author.username + "\n**Status:** Fechado",
     "url": null,
     "color": 1752220,
     "timestamp": new Date(),
