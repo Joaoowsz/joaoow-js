@@ -1,10 +1,11 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Você não possui permissão para executar esse comando.");  
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("``❗`` Use: !ban <@username> <motivo>");
     let bReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Você não possui permissão para executar esse comando.");
     if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Esse usuário não pode ser punido.");
 
     let banEmbed = new Discord.RichEmbed()
