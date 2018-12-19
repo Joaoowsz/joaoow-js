@@ -22,14 +22,14 @@ module.exports.run = async (bot, message) => {
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Ticket de ${message.author.username}`, message.author.displayAvatarURL)
   .addField('Ticket:', `**Autor:** ${message.author.username}\n**Dúvida:** ${args}`)
-  .setThumbnail(message.author.displayAvatarURL)
+  .setThumbnail("https://i.imgur.com/Stenp0u.png")
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   .setColor(16711728);
     
     const embed = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
   .addField('Ticket:', `**Autor:** ${message.author.username}\n**Dúvida:** ${args}\n**Status:** Aberto`)
-  .setThumbnail(message.author.displayAvatarURL)
+  .setThumbnail("https://i.imgur.com/Stenp0u.png")
   .setColor("#ffd700");
   message.author.send({embed});
     cnl.send({embed2})
