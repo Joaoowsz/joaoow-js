@@ -29,6 +29,10 @@ module.exports.run = async (bot, message, args) => {
     await msg1.react('📸');
     await msg1.react('📝');
 
+    
+
+    if(message.author.react('📸')) return message.channel.send(`Use: !anunciar <link da imagem> <mensagem do anúncio>`)
+
 
     canal.send("@everyone")
     canal.send({
