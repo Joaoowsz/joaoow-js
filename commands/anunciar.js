@@ -4,7 +4,8 @@ module.exports.run = async (bot, message, args) => {
 
 
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
-    let botmessage = args.slice(0).join(" ");
+    let imageurl = args[0]
+    let botmessage = args.slice(1).join(" ");
     message.delete().catch();
     let canal = message.guild.channels.find(`name`,'anuncios');
     canal.send("@everyone")
@@ -18,8 +19,8 @@ module.exports.run = async (bot, message, args) => {
       "icon_url": message.author.displayAvatarURL,
       "text": "Atenciosamente, " + message.author.username
     },
-    "thumbnail": {
-      "url": "https://i.imgur.com/Stenp0u.png"
+    "image": {
+      "url": imageurl
     }, 
     "author": {
       "name": " Rede Fade informa:",
