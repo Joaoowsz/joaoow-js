@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     let canal = message.guild.channels.find(`name`,'anuncios');
     let embed1 = ({
       "embed": {
-        "description": "Qual tipo de anúncio deseja enviar?\n\n:frame_photo: **Com imagem**\n:crayon: **Sem imagem**",
+        "description": "Qual tipo de anúncio deseja enviar?\n\n📸 **Com imagem**\n📝 **Sem imagem**",
         "url": "https://i.imgur.com/Stenp0u.png",
         "color": 7671154,
         "timestamp": null,
@@ -25,8 +25,9 @@ module.exports.run = async (bot, message, args) => {
         }
       }
     })
-    message.channel.send(embed1) 
-    message.channel.addReaction('🖼','🖍')
+    let msg1 = await message.channel.send(embed1);
+    await msg1.react('📸');
+    await msg1.react('📝');
 
 
     canal.send("@everyone")
