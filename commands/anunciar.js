@@ -75,8 +75,7 @@ module.exports.run = async (bot, message, args) => {
           if(reaction.emoji.name === "📸" && user.id !== bot.user.id) {
                reaction.remove(user)
                 message.channel.send(embed3)
-                msg2 = message.content
-
+                msg2 = message.member.collect
           let embed4 = ({
             "embed": {
               "description": msg2,
