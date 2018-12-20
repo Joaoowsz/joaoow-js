@@ -10,7 +10,7 @@ module.exports.run = async (bot, message) => {
         return message.channel.send('❌ | Você precisa esperar 5 minutos para abrir um novo ticket.');
     }
     if (args.length < 1) {
-        return message.reply(`❗ | Use: !ticket <sua dúvida>`);
+        return message.channel.send(`❗ | Use: !ticket <sua dúvida>`);
     }
 
     cooldown.add(message.author.id && message.guild.id);
