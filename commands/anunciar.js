@@ -8,6 +8,27 @@ module.exports.run = async (bot, message, args) => {
     let botmessage = args.slice(1).join(" ");
     message.delete().catch();
     let canal = message.guild.channels.find(`name`,'anuncios');
+    let embed1 = ({
+      "embed": {
+        "description": "Qual tipo de anúncio deseja enviar?\n\n:frame_photo: **Com imagem**\n:crayon: **Sem imagem**",
+        "url": "https://i.imgur.com/Stenp0u.png",
+        "color": 7671154,
+        "timestamp": null,
+        "text": null,
+        "footer": {
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        },
+        "author": {
+          "name": "Anúncios",
+          "url": "https://discordapp.com",
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+    })
+    message.channel.send(embed1)
+    message.addReaction(":frame_photo:") && message.addReaction(":crayon:")
+
+    
     canal.send("@everyone")
     canal.send({
   "embed": {
