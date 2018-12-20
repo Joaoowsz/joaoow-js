@@ -36,6 +36,14 @@ bot.on('guildMemberAdd', member => {
   bot.channels.get("523683124308213781").send(`${member} entrou no servidor.`)
 });
 
+bot.on('guildMemberRemove', member => {
+  console.log('user ' + member.user.username + ' saiu do servidor!')
+
+  var mutado = member.guild.roles.find(`name`, 'Mutado')
+
+  if(member.roles.has(mutado)) return bot.channels.get("523683124308213781").send(`Um usuário **mutado** saiu do servidor.\n**Usuário: ${member.tag}\n**ID:** ${member.id}`)
+})
+
 
 bot.on('message', async message => {
   let member = message.member;
