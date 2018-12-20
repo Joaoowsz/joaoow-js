@@ -26,6 +26,7 @@ module.exports.run = async (bot, message, args) => {
 
     
 if(!args[0]) return;
+message.channel.send("<:correto:505870056626847746> | Seu anúncio foi enviado com sucesso!")
 canal.send("@everyone")
 canal.send({
   "embed": {
