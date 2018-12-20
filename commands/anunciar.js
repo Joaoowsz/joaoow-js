@@ -63,6 +63,45 @@ module.exports.run = async (bot, message, args) => {
       }
     })
 
+    let embed4 = ({
+      "embed": {
+        "description": message.content,
+        "url": "https://discordapp.com",
+        "color": 15434940,
+        "timestamp": null,
+        "footer": {
+          "icon_url": "https://images-ext-2.discordapp.net/external/ssmOB8hpExAshVnbDJxBJSsVaC9M6mGA0ec7a-YLH2I/https/images-ext-1.discordapp.net/external/YFjo9kmtQ0r3WM1KGn-ga2k9g5i6obaYK-f9KK9z5SU/%253Fv%253D1/https/cdn.discordapp.com/emojis/480512404229193736.gif",
+          "text": "Anúncio realizado por: " + message.author.username
+        },
+        "author": {
+          "name": "#Fade:",
+          "url": "https://discordapp.com",
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+    })
+
+    let embed5 = ({
+      "embed": {
+        "description": msg3,
+        "url": "https://discordapp.com",
+        "color": 15434940,
+        "timestamp": null,
+        "footer": {
+          "icon_url": "https://images-ext-2.discordapp.net/external/ssmOB8hpExAshVnbDJxBJSsVaC9M6mGA0ec7a-YLH2I/https/images-ext-1.discordapp.net/external/YFjo9kmtQ0r3WM1KGn-ga2k9g5i6obaYK-f9KK9z5SU/%253Fv%253D1/https/cdn.discordapp.com/emojis/480512404229193736.gif",
+          "text": "Anúncio realizado por: " + message.author.username
+        },
+        "image": {
+          "url": msg4
+        },
+        "author": {
+          "name": "#Fade:",
+          "url": "https://discordapp.com",
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+    })
+
 
 
 
@@ -75,63 +114,43 @@ module.exports.run = async (bot, message, args) => {
           if(reaction.emoji.name === "📸" && user.id !== bot.user.id) {
                reaction.remove(user)
                 message.channel.send(embed3)
-                msg2 = message.member.collect
-          let embed4 = ({
-            "embed": {
-              "description": msg2,
-              "url": "https://discordapp.com",
-              "color": 15434940,
-              "timestamp": null,
-              "footer": {
-                "icon_url": "https://images-ext-2.discordapp.net/external/ssmOB8hpExAshVnbDJxBJSsVaC9M6mGA0ec7a-YLH2I/https/images-ext-1.discordapp.net/external/YFjo9kmtQ0r3WM1KGn-ga2k9g5i6obaYK-f9KK9z5SU/%253Fv%253D1/https/cdn.discordapp.com/emojis/480512404229193736.gif",
-                "text": "Anúncio realizado por: " + message.author.username
-              },
-              "image": {
-                "url": "https://i.imgur.com/Stenp0u.png"
-              },
-              "author": {
-                "name": "#Fade:",
-                "url": "https://discordapp.com",
-                "icon_url": "https://i.imgur.com/Stenp0u.png"
+                if (command === '!anunciar'){
+                  message.author.send("");
+                  const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+                  console.log(collector)
+                  collector.on('collect', message => {
+                      if (message.content === "a") return canal.send(embed4)
+                  })
+                }
               }
-            }
-          })
+            })
+                
+        
 
-          canal.send(embed4)
-          }
-        })
+          
+      
+
+          
+      
 
         message.react('📝')
       bot.on('messageReactionAdd', (reaction, user) => {
           if(reaction.emoji.name === "📝" && user.id !== bot.user.id) {
                reaction.remove(user)
                 message.channel.send(embed3)
-               msg3 = message.member.send(canal)
-               message.channel.send(embed2)
-               msg4 = message.member.send(canal)
+                if (command === '!anunciar'){
+                  message.author.send("");
+                  const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+                  console.log(collector)
+                  collector.on('collect', message => {
+                      if(message.content === "a") return canal.send(embed4)
 
-                let embed5 = ({
-                  "embed": {
-                    "description": msg3,
-                    "url": "https://discordapp.com",
-                    "color": 15434940,
-                    "timestamp": null,
-                    "footer": {
-                      "icon_url": "https://images-ext-2.discordapp.net/external/ssmOB8hpExAshVnbDJxBJSsVaC9M6mGA0ec7a-YLH2I/https/images-ext-1.discordapp.net/external/YFjo9kmtQ0r3WM1KGn-ga2k9g5i6obaYK-f9KK9z5SU/%253Fv%253D1/https/cdn.discordapp.com/emojis/480512404229193736.gif",
-                      "text": "Anúncio realizado por: " + message.author.username
-                    },
-                    "image": {
-                      "url": msg4
-                    },
-                    "author": {
-                      "name": "#Fade:",
-                      "url": "https://discordapp.com",
-                      "icon_url": "https://i.imgur.com/Stenp0u.png"
-                    }
-                  }
-                })
-          }
-        })       
+              
+          })
+        }
+      }
+    })
+               
 }
 
 module.exports.help = {
