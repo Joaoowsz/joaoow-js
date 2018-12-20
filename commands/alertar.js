@@ -26,7 +26,6 @@ module.exports.run = async (bot, message, args) => {
     })
 canal.send("@everyone")
 canal.send({
-    canal.send({
         "embed": {
           "description": botmessage,
           "url": "https://discordapp.com",
@@ -46,7 +45,6 @@ canal.send({
           }
         }
       })
-})
 
 }
 
