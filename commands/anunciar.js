@@ -6,7 +6,9 @@ module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
     let botmessage = args.slice(1).join(" ");
     message.delete().catch();
-    message.channel.send({
+    let canal = message.guild.channels.find(`name`,'anuncios ');
+    canal.send("@everyone")
+    canal.send({
   "embed": {
     "description": botmessage,
     "url": null,
