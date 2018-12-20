@@ -4,8 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
 
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
-    let imageurl = args[0]
-    let botmessage = args.slice(1).join(" ");
+    let botmessage = args.slice(0).join(" ");
     let canal = message.guild.channels.find(`name`,'anuncios');
     message.channel.send({
       "embed": {
@@ -37,6 +36,9 @@ canal.send({
     "text": "Anúncio enviado por:" + message.author.username,
     "footer": {
       "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1"
+    },
+    "thumbnail": {
+      "url": "https://cdn.discordapp.com/attachments/377876908622217226/525414332121612289/145.png"
     },
     "author": {
       "name": "#Fade:",
