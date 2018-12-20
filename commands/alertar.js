@@ -24,6 +24,7 @@ module.exports.run = async (bot, message, args) => {
         }
       }
     })
+    if(!args[0]) return;
 canal.send("@everyone")
 canal.send({
         "embed": {
@@ -33,7 +34,7 @@ canal.send({
           "timestamp": null,
           "footer": {
             "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1",
-            "text": "Anúncio enviado por:" + message.author.username,
+            "text": "Anúncio enviado por: " + message.author.username,
           },
           "thumbnail": {
             "url": imageurl

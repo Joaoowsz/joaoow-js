@@ -35,7 +35,7 @@ canal.send({
     "timestamp": null,
     "footer": {
       "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1",
-      "text": "Anúncio enviado por:" + message.author.username,
+      "text": "Anúncio enviado por: " + message.author.username,
     },
     "thumbnail": {
       "url": "https://cdn.discordapp.com/attachments/377876908622217226/525414332121612289/145.png"
