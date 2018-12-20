@@ -29,11 +29,7 @@ module.exports.run = async (bot, message, args) => {
     await msg1.react('📸');
     await msg1.react('📝');
 
-    
-
-      message.channel.send('asdsa').then( => {
-      message.react('📸')
-      })
+    message.react('📸')
       bot.on('messageReactionAdd', (reaction, user) => {
           if(reaction.emoji.name === "📸" && user.id !== bot.user.id) {
                reaction.remove(user)
