@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
     let botmessage = args.slice(0).join(" ");
     let canal = message.guild.channels.find(`name`,'anuncios');
-    message.channel.send({
+    if(!args[0]) return message.channel.send({
       "embed": {
         "description": "**Qual tipo de anúncio deseja enviar?**\n\n**Sem imagem:** !anunciar <mensagem>\n **Com imagem:** !alertar <link-da-imagem> <mensagem>",
         "url": "https://i.imgur.com/Stenp0u.png",
