@@ -42,7 +42,7 @@ bot.on('guildMemberRemove', member => {
   var mutado = member.guild.roles.find(`name`, 'Mutado')
 
   if(!member.roles.has(mutado)) return;
-  await bot.channels.get("523683124308213781").send(`Um usuário **mutado** saiu do servidor.\n**Usuário:** ${member}\n**ID:** ${member.id}`)
+  bot.channels.get("523683124308213781").send(`Um usuário **mutado** saiu do servidor.\n**Usuário:** ${member}\n**ID:** ${member.id}`)
 });
 
 
