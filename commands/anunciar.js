@@ -78,7 +78,7 @@ module.exports.run = async (bot, message, args) => {
 
         message.react('📝')
       bot.on('messageReactionAdd', (reaction, user) => {
-          if(reaction.emoji.name === "📸" && user.id !== bot.user.id) {
+          if(reaction.emoji.name === "📝" && user.id !== bot.user.id) {
                reaction.remove(user)
                 message.channel.send(embed3)
           }
