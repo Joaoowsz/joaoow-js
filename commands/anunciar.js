@@ -30,8 +30,17 @@ module.exports.run = async (bot, message, args) => {
     await msg1.react('📝');
 
     
-    
-          if(member.react('📸')) return message.channel.send('Use: ``!anunciar <link da imagem> <mensagem>``');
+    exports.run = (bot,message,args) => {
+
+      message.channel.send('a').then( => {
+      message.react('o emoji')
+      })
+      bot.on('messageReactionAdd', (reaction, user) => {
+          if(reaction.emoji.name === "o emoji" && user.id !== bot.user.id) {
+               reaction.remove(user)
+                message.channel.send("bla boa bla ")
+          }
+        })
 }
 
 
