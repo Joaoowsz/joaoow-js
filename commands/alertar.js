@@ -35,6 +35,9 @@ canal.send({
     "footer": {
       "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1"
     },
+    "image": {
+      "url": imageurl
+    },
     "author": {
       "name": "#Fade:",
       "url": "https://discordapp.com",
@@ -46,7 +49,7 @@ canal.send({
 }
 
 module.exports.help = {
-    name: "anunciar"
+    name: "alertar"
 }
 
 
