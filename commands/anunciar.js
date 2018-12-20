@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
         }
       }
     })
-    message.channel.send(embed1) && addReact(':frame_photo:',':crayon:')
+    message.channel.send(embed1) && addReact('🖼','🖍')
 
 
     canal.send("@everyone")
