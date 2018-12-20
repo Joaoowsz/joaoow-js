@@ -25,6 +25,45 @@ module.exports.run = async (bot, message, args) => {
         }
       }
     })
+
+
+    let embed2 = ({
+      "embed": {
+        "description": "**Utilize:** !anunciar <link da imagem> <link da imagem>",
+        "url": "https://i.imgur.com/Stenp0u.png",
+        "color": 7671154,
+        "timestamp": null,
+        "text": null,
+        "footer": {
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        },
+        "author": {
+          "name": "Anúncios",
+          "url": "https://discordapp.com",
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+    })
+
+    let embed3 = ({
+      "embed": {
+        "description": "**Utilize:** !anunciar <link da imagem>",
+        "url": "https://i.imgur.com/Stenp0u.png",
+        "color": 7671154,
+        "timestamp": null,
+        "text": null,
+        "footer": {
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        },
+        "author": {
+          "name": "Anúncios",
+          "url": "https://discordapp.com",
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+    })
+
+
     let msg1 = await message.channel.send(embed1);
     await msg1.react('📸');
     await msg1.react('📝');
@@ -33,9 +72,19 @@ module.exports.run = async (bot, message, args) => {
       bot.on('messageReactionAdd', (reaction, user) => {
           if(reaction.emoji.name === "📸" && user.id !== bot.user.id) {
                reaction.remove(user)
-                message.channel.send("Use: ``!anunciar <link da imagem> <mensagem>``")
+                message.channel.send(embed2)
           }
         })
+
+        message.react('📝')
+      bot.on('messageReactionAdd', (reaction, user) => {
+          if(reaction.emoji.name === "📸" && user.id !== bot.user.id) {
+               reaction.remove(user)
+                message.channel.send(embed3)
+          }
+        })
+
+        
 }
 
 
