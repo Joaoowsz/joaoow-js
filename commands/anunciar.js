@@ -25,6 +25,8 @@ module.exports.run = async (bot, message, args) => {
       }
     })
 
+    
+if(!args[0]) return;
 canal.send("@everyone")
 canal.send({
   "embed": {
