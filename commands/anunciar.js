@@ -25,7 +25,8 @@ module.exports.run = async (bot, message, args) => {
         }
       }
     })
-    message.channel.send(embed1) && addReaction('🖼','🖍')
+    message.channel.send(embed1) 
+    message.channel.addReaction('🖼','🖍')
 
 
     canal.send("@everyone")
