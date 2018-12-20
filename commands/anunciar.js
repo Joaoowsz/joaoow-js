@@ -30,12 +30,12 @@ canal.send("@everyone")
 canal.send({
   "embed": {
     "description": botmessage,
-    "url": "https://i.imgur.com/Stenp0u.png",
-    "color": 7671154,
+    "url": "https://discordapp.com",
+    "color": 9710166,
     "timestamp": null,
-    "text": "Anúncio enviado por:" + message.author.username,
     "footer": {
-      "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1"
+      "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1",
+      "text": "Anúncio enviado por:" + message.author.username,
     },
     "thumbnail": {
       "url": "https://cdn.discordapp.com/attachments/377876908622217226/525414332121612289/145.png"
@@ -47,7 +47,6 @@ canal.send({
     }
   }
 })
-
 }
 
 module.exports.help = {

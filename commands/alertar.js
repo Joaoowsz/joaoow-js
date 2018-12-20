@@ -26,24 +26,26 @@ module.exports.run = async (bot, message, args) => {
     })
 canal.send("@everyone")
 canal.send({
-  "embed": {
-    "description": botmessage,
-    "url": "https://i.imgur.com/Stenp0u.png",
-    "color": 7671154,
-    "timestamp": null,
-    "text": "Anúncio enviado por:" + message.author.username,
-    "footer": {
-      "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1"
-    },
-    "image": {
-      "url": imageurl
-    },
-    "author": {
-      "name": "#Fade:",
-      "url": "https://discordapp.com",
-      "icon_url": "https://i.imgur.com/Stenp0u.png"
-    }
-  }
+    canal.send({
+        "embed": {
+          "description": botmessage,
+          "url": "https://discordapp.com",
+          "color": 9710166,
+          "timestamp": null,
+          "footer": {
+            "icon_url": "https://cdn.discordapp.com/emojis/506833797367595037.gif?v=1",
+            "text": "Anúncio enviado por:" + message.author.username,
+          },
+          "thumbnail": {
+            "url": imageurl
+          },
+          "author": {
+            "name": "#Fade:",
+            "url": "https://discordapp.com",
+            "icon_url": "https://i.imgur.com/Stenp0u.png"
+          }
+        }
+      })
 })
 
 }
