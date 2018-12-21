@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = (bot, message, args) => {
 
-let membro = member.guild.roles.find(`name`, 'Membro')
-let registrando = member.guild.roles.find(`name`, 'Registrando')
+let membro = message.guild.roles.find(`name`, 'Membro')
+let registrando = message.guild.roles.find(`name`, 'Registrando')
 
 let embed = ({
     "embed": {
