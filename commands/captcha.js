@@ -40,5 +40,5 @@ let msg1 = message.channel.send(embed);
       })
 }
 module.exports.help = {
-  name:"avatar"
+  name:"captcha"
 }
