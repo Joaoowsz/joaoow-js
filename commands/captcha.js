@@ -27,8 +27,7 @@ let embed = ({
       }
 })
 
-let msg1 = message.channel.send(embed);
-msg1.react('✅');
+let msg1 = message.channel.send(embed).react('✅')
 
     message.react('✅')
     bot.on('messageReactionAdd', (reaction, user) => {
