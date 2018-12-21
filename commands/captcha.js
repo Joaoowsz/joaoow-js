@@ -27,16 +27,22 @@ let embed = ({
       }
 })
 
-let msg1 = message.channel.send(embed).react('✅')
 
-    message.react('✅')
-    bot.on('messageReactionAdd', (reaction, user) => {
-        if(reaction.emoji.name === "✅" && user.id !== bot.user.id) {
-             reaction.remove(user)
-             user.removeRole(registrando)
-              user.addRole(membro)
+
+let msg1 = await message.channel.send(embed1);
+await msg1.react('✅');
+
+ message.channel.send(embed).then( msg1 => {
+  message.react('✅')
+  })
+  bot.on('messageReactionAdd', (reaction, user) => {
+      if(reaction.emoji.name === "✅" && user.id !== bot.user.id) {
+           reaction.remove(user)
+            user.removeRole(registrando)
+            user.addRole(membro)
         }
-      })
+    })
+      
 }
 module.exports.help = {
   name:"captcha"
