@@ -33,8 +33,8 @@ let msg1 = message.channel.send(embed).then(msg1=> msg1.react('✅'))
   bot.on('messageReactionAdd', (reaction, user) => {
       if(reaction.emoji.name === "✅" && user.id !== bot.user.id) {
            reaction.remove(user)
-            user.removeRole(registrando)
-            user.addRole(membro)
+            member.removeRole(registrando)
+            member.addRole(membro)
         }
     })
       
