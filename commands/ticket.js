@@ -19,6 +19,7 @@ module.exports.run = async (bot, message) => {
     }, 300000);
     let guild = message.guild;
     const cnl = bot.channels.get('524805327166636048');
+    const logticket = bot.channels.get('525983734013362187');
     message.channel.send(`✔ | Seu ticket foi enviado, em breve será respondido.`);
     const embed2 = new Discord.RichEmbed()
   .setAuthor(`Informações sobre o seu ticket:`, message.author.displayAvatarURL)
@@ -41,12 +42,13 @@ module.exports.run = async (bot, message) => {
           "url": message.author.displayAvatarURL
         }, 
         "author": {
-          "name": "Seu ticket foi respondido!",
+          "name": "Um novo ticket foi aberto!",
           "url": null,
           "icon_url": "https://i.imgur.com/Stenp0u.png"
         }
       }
     })
+    logticket.send(embed)
     cnl.send(embed)
     cnl.send("<@&518866737387667471> <@&518866542390280192>")
   .catch(e => logger.error(e))

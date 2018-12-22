@@ -8,8 +8,10 @@ module.exports.run = async (bot, message, args) => {
     if (!tUser) return message.channel.send("❗ | Utilize: ``!responder <@username> <resposta>``");
     let tMessage = args.slice(1).join(" ");
     message.delete().catch();
+    const logticket = bot.channels.get('525983734013362187');
     message.channel.send("✔ | O Ticket de " + tUser.user.username + " foi respondido com sucesso! ")
-    tUser.send({
+
+    let embed = ({
   "embed": {
     "description": "**Autor:** " + tUser.user.username + "\n**Resposta:** " + tMessage + "\n**Staffer:** " + message.author.username + "\n**Status:** Fechado",
     "url": null,
@@ -29,6 +31,30 @@ module.exports.run = async (bot, message, args) => {
     }
   }
     })
+
+    let embed2 = ({
+      "embed": {
+        "description": "**Autor:** " + tUser.user.username + "\n**Resposta:** " + tMessage + "\n**Staffer:** " + message.author.username + "\n**Status:** Fechado",
+        "url": null,
+        "color": 1752220,
+        "timestamp": new Date(),
+        "footer": {
+          "icon_url": message.author.displayAvatarURL,
+          "text": null
+        },
+        "thumbnail": {
+          "url": tUser.displayAvatarURL
+        }, 
+        "author": {
+          "name": "Um ticket foi respondido!",
+          "url": null,
+          "icon_url": "https://i.imgur.com/Stenp0u.png"
+        }
+      }
+        })
+
+    logticket.send(embed)
+    tUser.send(embed)
 
 }
     module.exports.help = {
