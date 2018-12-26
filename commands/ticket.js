@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const moment = require('moment');
 
-if(message.channel.id != "523838496691978240" && message.channel.id != "523586087696990208") return message.channel.send(" ");
+if(message.channel.id != "523838496691978240" && message.channel.id != "523586087696990208") return message.channel.send(" "); 
 let tMessage = args.slice(0).join(" ");
 if (!tMessage) return message.channel.send("❗ | Utilize: ``!ticket <sua dúvida>``");
 message.delete().catch();
