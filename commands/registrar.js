@@ -7,8 +7,10 @@ module.exports.run = async (bot, message, args) => {
     let role = message.guild.roles.find(`name`, 'Registrando');
     let cargo = message.guild.roles.find(`name`, 'Membro');
     let member = message.member;
+    message.delete().catch();
     if(!member.addRole(role));
     if(!member.roles.has(role)) return member.removeRole(role) && message.channel.send("✔ | Você foi registrado com sucesso!");
+    message.delete().catch();
 
 }
 

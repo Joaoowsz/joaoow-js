@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
 
     if(mUser.roles.has(role)) return message.channel.send("❗ | Esse usuário já está mutado.");
   await(mUser.addRole(role));
-  message.channel.send("✔ | Usuário mutado.")
+  message.channel.send("✔ | Usuário mutado com sucesso.")
 
 }
 

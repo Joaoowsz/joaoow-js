@@ -21,6 +21,7 @@ module.exports.run = async (bot, message, args) => {
 
     message.guild.member(bUser).ban(bReason);
     punicoeschannel.send(banEmbed);
+    message.channel.send("✔ | Usuário punido com sucesso.")
 }
 
 module.exports.help = {
