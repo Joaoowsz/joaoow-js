@@ -8,10 +8,8 @@ module.exports.run = async (bot, message, args) => {
     let cargo = message.guild.roles.find(`name`, 'Membro');
     let member = message.member;
     message.delete().catch();
-    if(!member.addRole(role));
-    if(!member.roles.has(role)) return member.removeRole(role) && message.channel.send(" ");
-    message.delete().catch();
-
+    member.removeRole(role)
+    member.addRole(cargo)
 }
 
 module.exports.help = {
