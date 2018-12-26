@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     let member = message.member;
     message.delete().catch();
     if(!member.addRole(role));
-    if(!member.roles.has(role)) return member.removeRole(role) && message.channel.send("✔ | Você foi registrado com sucesso!");
+    if(!member.roles.has(role)) return member.removeRole(role) && message.channel.send(" ");
     message.delete().catch();
 
 }
