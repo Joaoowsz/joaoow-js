@@ -7,7 +7,7 @@ let registrando = message.guild.roles.find(`name`, 'Registrando')
 
 let embed = ({
     "embed": {
-        "description": "Para se registrar basta clicar na reação abaixo.",
+        "description": "Para se registrar basta clicar na reação abaixo ou digite !registrar.",
         "url": "https://discordapp.com",
         "color": 7313212,
         "timestamp": null,
