@@ -9,7 +9,19 @@ module.exports.run = async (bot, message, args) => {
     let tMessage = args.slice(1).join(" ");
     message.delete().catch();
     const logticket = bot.channels.get('525983734013362187');
-    message.channel.send("✔ | O Ticket de " + tUser.user.username + " foi respondido com sucesso! ")
+
+    let ticketembed = ({
+      "embed": {
+        "description": "O ticket de " + tUser + " foi respondido com sucesso!",
+        "color": 187749,
+        "timestamp": null,
+        "footer": {
+          "icon_url": "https://i.imgur.com/Stenp0u.png",
+          "text": "Staffer: " + message.author.username
+        }
+      }
+    })
+    message.channel.send(ticketembed)
 
     let embed = ({
   "embed": {
