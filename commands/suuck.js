@@ -27,6 +27,8 @@ let embed = ({
       }
 })
 
+message.channel.send(embed)
+
 
 }
 
