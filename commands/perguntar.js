@@ -8,11 +8,28 @@ module.exports.run = async (bot, message, args) => {
     let result = Math.floor((Math.random() * replies.length));
     let question = args.join(" ");
 
-    let ballembed = new Discord.RichEmbed()
-    .setAuthor(message.author.tag)
-    .setColor("#8de878")
-    .addField("Pergunta:", question)
-    .addField("Resposta:", replies[result])
+    let ballembed = ({
+
+        "embed": {
+            "description": "**Pergunta:** " + question + "\n**Resposta:** " + replies[result],
+            "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
+            "color": 1146986,
+            "timestamp": null,
+            "footer": {
+              "icon_url": message.author.displayAvatarURL,
+              "text": "Autor da pergunta: " + message.author.username
+            },
+            "thumbnail": {
+              "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+            },
+            "author": {
+              "name": "Perguntas e Respostas",
+              "url": "https://discordapp.com",
+              "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+            }
+          }
+
+    })
 
     message.channel.send(ballembed);
 }

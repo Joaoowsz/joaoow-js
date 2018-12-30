@@ -187,7 +187,7 @@ bot.login(process.env.BOT_TOKEN);
 //    AQUA: 1752220,
 //    GREEN: 3066993,
 //    BLUE: 3447003,
-//    PURPLE: 10181046,s
+//    PURPLE: 10181046,
 //    GOLD: 15844367,
 //    ORANGE: 15105570,
 //    RED: 15158332,
