@@ -32,5 +32,5 @@ let embed = ({
 
 
 module.exports.help = {
-    name: "perguntar"
+    name: "suuck"
 }
