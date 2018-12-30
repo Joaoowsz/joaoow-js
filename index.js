@@ -38,22 +38,22 @@ bot.on('guildMemberAdd', member => {
       "color": 14427808,
       "timestamp": "2018-12-30T05:39:43.479Z",
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
+        "icon_url": "https://i.imgur.com/Stenp0u.png",
         "text": null
       },
       "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+        "url": "https://i.imgur.com/Stenp0u.png"
       },
       "author": {
         "name": "Suuck › Discord",
         "url": "https://discordapp.com",
-        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+        "icon_url": "https://i.imgur.com/Stenp0u.png"
       }
     }
 
   })
   
-  var role = member.guild.roles.find(`name`, 'Membro')
+  var role = member.guild.roles.find(`name`, '👤Membro')
   member.addRole(role)
   bot.channels.get("528251265382088704").send(`${member}`)
   bot.channels.get("528251265382088704").send(embedbv)
@@ -96,7 +96,7 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - FadeMC",
+        "name": "📋 Logs - Suuck > Discord",
         "url": null,
         "icon_url": "https://i.imgur.com/Stenp0u.png"
       },
@@ -123,7 +123,7 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - FadeMC",
+        "name": "📋 Logs - Suuck > Discord",
         "url": null,
         "icon_url": "https://i.imgur.com/Stenp0u.png"
       },
@@ -153,7 +153,7 @@ bot.on("messageDelete", async message => {
         "text": "Autor: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - FadeMC",
+        "name": "📋 Logs - Suuck > Discord",
         "url": message.author.displayAvatarURL,
         "icon_url": "https://i.imgur.com/Stenp0u.png"
       },
