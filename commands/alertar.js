@@ -10,17 +10,17 @@ module.exports.run = async (bot, message, args) => {
     if(!args[0]) return message.channel.send({
       "embed": {
         "description": "**Qual tipo de anúncio deseja enviar?**\n\n**Sem imagem:** !anunciar <mensagem>\n **Com imagem:** !alertar <link-da-imagem> <mensagem>",
-        "url": "https://i.imgur.com/Stenp0u.png",
+        "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
         "color": 7671154,
         "timestamp": null,
         "text": null,
         "footer": {
-          "icon_url": "https://i.imgur.com/Stenp0u.png"
+          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
         },
         "author": {
           "name": "Anúncios",
           "url": "https://discordapp.com",
-          "icon_url": "https://i.imgur.com/Stenp0u.png"
+          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
         }
       }
     })

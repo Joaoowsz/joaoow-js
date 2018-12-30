@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = (bot, message, args) => {
-    if(message.channel.id != "523838496691978240" && message.channel.id != "523586087696990208") return message.channel.send(" ");
+    if(message.channel.id != "528256316922134528") return message.channel.send("Desculpe, meus comandos só funcionam no <#528256316922134528>!");
         let member = message.mentions.users.size > 0 ? message.mentions.users.first() : message.author;
      message.channel.send({
         "embed": {

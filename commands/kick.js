@@ -8,14 +8,14 @@ module.exports.run = async (bot, message, args) => {
     if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Esse usuário não pode ser punido!");
 
     let kickEmbed = new Discord.RichEmbed()
-    .setDescription("**Fade Punições - Discord**")
+    .setDescription("**Punições - Discord**")
     .setColor("#e56b00")
     .addField("Punição:", `Expulsão`)
     .addField("Usuário punido:", `${kUser}`)
     .addField("Staffer:", `<@${message.author.id}>`)
     .addField("Motivo:", kReason);
 
-    let punicoesChannel = message.guild.channels.find(`name`, "🚷punições-discord");
+    let punicoesChannel = message.guild.channels.find(`name`, "🚷punições");
     if(!punicoesChannel) return message.channel.send("❌ Canal de punições não encontrado.");
 
     message.guild.member(kUser).kick(kReason);

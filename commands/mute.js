@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let mUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!mUser) return message.channel.send("``❗`` Use: ``!mute <@username> <motivo>``");
     let mReason = args.join(" ").slice(22);
-    let punicoes = message.guild.channels.find(`name`, '🚷punições-discord');
+    let punicoes = message.guild.channels.find(`name`, '🚷punições');
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("``❌`` Você não possui permissão para executar esse comando.");
     message.delete().catch();
     punicoes.send({
