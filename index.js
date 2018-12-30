@@ -24,16 +24,40 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("loja.fademc.com.br", {type: "PLAYING"});
+  bot.user.setActivity("Desenvolvido por Joaoowsz#0001", {type: "PLAYING"});
 
 });
 
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
+
+  let embedbv = ({
+    "embed": {
+      "description": "Seja bem-vindo(a) ao discord oficial do Suuck!\nAqui você poderá criar novas amizades, participar de eventos e até mesmo bater um papo comigo!\n\nEntre no meu canal [clicando aqui](https://www.youtube.com/channel/UCveCy4D7N_9wv49nDqhFvAw), aproveite para se inscrever e ativar o sininho de notificação para receber todos os meus vídeos!",
+      "url": "https://discordapp.com",
+      "color": 14427808,
+      "timestamp": "2018-12-30T05:39:43.479Z",
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
+        "text": null
+      },
+      "thumbnail": {
+        "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+      },
+      "author": {
+        "name": "Suuck › Discord",
+        "url": "https://discordapp.com",
+        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+      }
+    }
+
+  })
   
-  var role = member.guild.roles.find(`name`, 'Registrando')
+  var role = member.guild.roles.find(`name`, 'Membro')
   member.addRole(role)
-  bot.channels.get("523683124308213781").send(`${member} entrou no servidor.`)
+  bot.channels.get("528251265382088704").send(`${member}`)
+  bot.channels.get("528251265382088704").send(embedbv)
+
 });
 
 bot.on('guildMemberRemove', member => {
@@ -42,13 +66,13 @@ bot.on('guildMemberRemove', member => {
   var mutado = member.guild.roles.find(`name`, 'Mutado')
 
   if(!member.roles.get(mutado.id)) return;
-  bot.channels.get("523683124308213781").send(`Um usuário **mutado** saiu do servidor.\n**Usuário:** ${member}\n**ID:** ${member.id}`)
+  bot.channels.get("528808778926391316").send(`Um usuário **mutado** saiu do servidor.\n**Usuário:** ${member}\n**ID:** ${member.id}`)
 });
 
 
 bot.on('message', async message => {
   let member = message.member;
-  let blacklisted = ['mush','mushmc.com.br','mushmc','https','http','hypixel','.com','.tk','smile','zenix','wombo','lothus','empire','wave','teck'];
+  let blacklisted = [''];
   if(member.hasPermission('MANAGE_MESSAGES')) return 
   let foundInText = false;
   for (var i in blacklisted) {
@@ -148,7 +172,7 @@ bot.on("message", async message => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
 
-  let prefix = botconfig.prefix;
+  let prefix = (botconfig.prefix);
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
