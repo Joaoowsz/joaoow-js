@@ -34,39 +34,43 @@ message.author.send({
     "fields": [
       {
         "name": "Anúncios",
-        "value": "Formato: *!anunciar*\nChannel: *<#528256316922134528>* \nFunção: *Use para enviar um anúncio.*\n "
+        "value": "Formato: *!anunciar*\nCanal: *<#528256316922134528>* \nFunção: *Use para enviar um anúncio.*\n "
       },
       {
         "name": "Clear",
-        "value": "Formato: *!clear <quantidade>*\nChannel: *<#528256316922134528>*  \nFunção: *Use para apagar algumas mensagens.*\n "
+        "value": "Formato: *!clear <quantidade>*\nCanal: *<#528256316922134528>*  \nFunção: *Use para apagar algumas mensagens.*\n "
       },
       {
         "name": "Banimento",
-        "value": "Formato: *!ban <@username> <motivo>*\nChannel: *<#528256316922134528>*  \nFunção: *Use para banir um membro do servidor.*\n "
+        "value": "Formato: *!ban <@username> <motivo>*\nCanal: *<#528256316922134528>*  \nFunção: *Use para banir um membro do servidor.*\n "
       },
       {
         "name": "Expulsão",
-        "value": "Formato: *!kick <@username> <motivo>*\nChannel: *<#528256316922134528>*  \nFunção: *Use para expulsar um membro do servidor.*\n "
+        "value": "Formato: *!kick <@username> <motivo>*\nCanal: *<#528256316922134528>*  \nFunção: *Use para expulsar um membro do servidor.*\n "
       },
       {
         "name": "Perguntar",
-        "value": "Formato: *!perguntar <pergunta>*\nChannel: *<#528256316922134528>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
+        "value": "Formato: *!perguntar <pergunta>*\nCanal: *<#528256316922134528>*  \nFunção: *Use para se divertir perguntando algo ao bot.*\n "
       },
       {
         "name": "Avatar",
-        "value": "Formato: *!avatar <@username>*\nChannel: *<#528256316922134528>*  \nFunção: *Use para ver o avatar de alguém.*\n "
+        "value": "Formato: *!avatar <@username>*\nCanal: *<#528256316922134528>*  \nFunção: *Use para ver o avatar de alguém.*\n "
       },
       {
         "name": "Dog",
-        "value": "Formato: *!dog*\nChannel: *<#528256316922134528>*  \nFunção: *Use para se divertir com um cachorro.*\n "
+        "value": "Formato: *!dog*\nCanal: *<#528256316922134528>*  \nFunção: *Use para se divertir com um cachorro.*\n "
       },
       {
         "name": "RemoveGroup",
-        "value": "Formato: *!removegroup <@username> <role>*\nChannel: *<#528256316922134528>*  \nFunção: *Use para remover o cargo de alguém.*\n "
+        "value": "Formato: *!removegroup <@username> <cargo>*\nCanal: *<#528256316922134528>*  \nFunção: *Use para remover o cargo de alguém.*\n "
       },
       {
         "name": "SetGroup",
-        "value": "Formato: *!setgroup <@username>* <cargo>\nChannel: *<#528256316922134528>*  \nFunção: *Use para setar um cargo em alguém.*\n "
+        "value": "Formato: *!setgroup <@username>* <cargo>\nCanal: *<#528256316922134528>*  \nFunção: *Use para setar um cargo em alguém.*\n "
+      },
+      {
+        "name": "Suuck",
+        "value": "Formato: *!suuck* <cargo>\nCanal: *<#528256316922134528>*  \nFunção: *Use para ver algumas informações sobre mim.*\n "
       }
         ]
   }
