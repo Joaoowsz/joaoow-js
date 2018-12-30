@@ -38,16 +38,16 @@ bot.on('guildMemberAdd', member => {
       "color": 14427808,
       "timestamp": "2018-12-30T05:39:43.479Z",
       "footer": {
-        "icon_url": "https://i.imgur.com/Stenp0u.png",
+        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png",
         "text": null
       },
       "thumbnail": {
-        "url": "https://i.imgur.com/Stenp0u.png"
+        "url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
       "author": {
         "name": "Suuck › Discord",
         "url": "https://discordapp.com",
-        "icon_url": "https://i.imgur.com/Stenp0u.png"
+        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       }
     }
 
@@ -98,7 +98,7 @@ bot.on("channelCreate", async channel => {
       "author": {
         "name": "📋 Logs - Suuck > Discord",
         "url": null,
-        "icon_url": "https://i.imgur.com/Stenp0u.png"
+        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
       "fields": [
         {
@@ -125,7 +125,7 @@ bot.on("channelDelete", async channel => {
       "author": {
         "name": "📋 Logs - Suuck > Discord",
         "url": null,
-        "icon_url": "https://i.imgur.com/Stenp0u.png"
+        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
       "fields": [
         {
@@ -155,7 +155,7 @@ bot.on("messageDelete", async message => {
       "author": {
         "name": "📋 Logs - Suuck > Discord",
         "url": message.author.displayAvatarURL,
-        "icon_url": "https://i.imgur.com/Stenp0u.png"
+        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
       "fields": [
         {

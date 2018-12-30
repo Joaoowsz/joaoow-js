@@ -40,7 +40,7 @@ bot.channels.get("528254095614541854").send({
       "url": "https://cdn.discordapp.com/attachments/377876908622217226/525414332121612289/145.png"
     },
     "author": {
-      "name": "#Fade:",
+      "name": "Atenção:",
       "url": "https://discordapp.com",
       "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
     }

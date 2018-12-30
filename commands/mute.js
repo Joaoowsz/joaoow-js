@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
       "color": 15105570,
       "footer": {
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png",
-        "text": "Equipe de moderação - FadeMC"
+        "text": "Moderação - Suuck > Discord"
       }
     }
   })

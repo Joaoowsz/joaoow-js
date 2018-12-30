@@ -39,7 +39,7 @@ module.exports.run = async (bot, message, args) => {
             "url": imageurl
           },
           "author": {
-            "name": "#Fade:",
+            "name": "#Atenção:",
             "url": "https://discordapp.com",
             "icon_url": "https://i.imgur.com/Stenp0u.png"
           }
