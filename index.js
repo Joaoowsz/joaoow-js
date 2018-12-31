@@ -39,7 +39,7 @@ bot.on('guildMemberAdd', member => {
       "timestamp": "2018-12-30T05:39:43.479Z",
       "footer": {
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png",
-        "text": "Total de membros: " + memberCount
+        "text": "Total de membros: " + message.guild.memberCount
       },
       "thumbnail": {
         "url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
