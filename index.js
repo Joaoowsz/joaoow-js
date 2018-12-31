@@ -38,16 +38,16 @@ bot.on('guildMemberAdd', member => {
       "color": 14427808,
       "timestamp": "2018-12-30T05:39:43.479Z",
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png",
+        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
         "text": null
       },
       "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
+        "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
       },
       "author": {
         "name": "Suuck › Discord",
         "url": "https://discordapp.com",
-        "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
+        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
       }
     }
 
