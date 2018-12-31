@@ -70,19 +70,19 @@ bot.on('guildMemberRemove', member => {
 });
 
 
-bot.on('message', async message => {
-  let member = message.member;
-  let blacklisted = [''];
-  if(member.hasPermission('MANAGE_MESSAGES')) return 
-  let foundInText = false;
-  for (var i in blacklisted) {
-    if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
-  }
-  if (foundInText) {
-    message.delete();
-    message.channel.send(' ');
-  }
-})
+//bot.on('message', async message => {
+ // let member = message.member;
+  //let blacklisted = [''];
+ // if(member.hasPermission('MANAGE_MESSAGES')) return 
+ // let foundInText = false;
+ // for (var i in blacklisted) {
+ //   if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
+ // }
+ // if (foundInText) {
+  //  message.delete();
+  //  message.channel.send(' ');
+ // }
+//})
 
 bot.on("channelCreate", async channel => {
 
