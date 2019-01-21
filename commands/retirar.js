@@ -21,7 +21,7 @@ let embed = ({
     }
   }
 })
-
+message.delete()
 message.channel.send(embed)
     
 }
