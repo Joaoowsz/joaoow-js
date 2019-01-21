@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.hasPermission("MAAGE_MESSAGES")) return message.channel.send("❌ | Você não possui permissão para executar esse comando.");  
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ | Você não possui permissão para executar esse comando.");  
 
 let embed = ({
   "embed": {
