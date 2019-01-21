@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 
 let embed = ({
   "embed": {
-    "description": args[0] + " promovido para " + args[1],
+    "description": args[0] + " novo <@&530505271676764180>",
     "url": "https://discordapp.com",
     "color": 1698620,
     "timestamp": new Date(),
@@ -15,7 +15,7 @@ let embed = ({
       "text": null
     },
     "author": {
-      "name": "🎉 Parabéns!",
+      "name": "📢 Atenção:",
       "url": "https://discordapp.com",
       "icon_url": null
     }
@@ -27,5 +27,5 @@ message.channel.send(embed)
 }
 
 module.exports.help = {
-  name:"promover"
+  name:"recrutar"
 }
