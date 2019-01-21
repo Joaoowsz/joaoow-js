@@ -8,20 +8,48 @@ module.exports.run = async (bot, message, args) => {
     let bReason = args.join(" ").slice(22);
     if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Esse usuário não pode ser punido.");
 
-    let banEmbed = new Discord.RichEmbed()
-    .setDescription("**Punições - Discord**")
-    .setColor("#f95336")
-    .addField("Punição:", `Banimento`)
-    .addField("Usuário punido:", `${bUser}`)
-    .addField("Staffer:", `<@${message.author.id}>`)
-    .addField("Motivo:", bReason);
+    let embedchat = ({
+      "embed": {
+        "description": "Membro punido com **sucesso**.",
+        "url": "https://discordapp.com",
+        "color": 1698620,
+        "timestamp": new Date(),
+        "footer": {
+          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg",
+          "text": null
+        },
+        "author": {
+          "name": "Punição - Discord",
+          "url": "https://discordapp.com",
+          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
+        }
+      }
+    })
+
+    let embedpunicoes = ({
+    "embed": {
+      "description": "**Usuário punido:** " + bUser + "\n**Punido por:** <@" + message.author.id + "> \n**Motivo:** " + bReason,
+      "url": "https://discordapp.com",
+      "color": 1698620,
+      "timestamp": new Date(),
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg",
+        "text": "Registro de punição do discord"
+      },
+      "author": {
+        "name": "Punição - Discord",
+        "url": "https://discordapp.com",
+        "icon_url": message.author.username
+      }
+    }
+  })
     
-    let punicoeschannel = message.guild.channels.find(`name`, "🚷punições");
+    let punicoeschannel = message.guild.channels.find(`name`, "⛔punições");
     if(!punicoeschannel) return message.channel.send("❌ Canal de punições não encontrado.");
 
     message.guild.member(bUser).ban(bReason);
-    punicoeschannel.send(banEmbed);
-    message.channel.send("✔ | Usuário punido com sucesso.")
+    punicoeschannel.send(embedpunicoes);
+    message.channel.send(embedchat)
 }
 
 module.exports.help = {

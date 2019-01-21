@@ -93,5 +93,5 @@ message.author.send({
 }
 
 module.exports.help = {
-    name: "help"
+    name: "aosdkasodkasodkasodkasodkasodkasodkasodkasodkasodkasodkaoskdasokdk"
 }

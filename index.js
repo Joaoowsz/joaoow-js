@@ -30,33 +30,9 @@ bot.on("ready", async () => {
 
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
-
-  let embedbv = ({
-    "embed": {
-      "description": "Seja bem-vindo(a) ao discord oficial do Suuck!\nAqui você poderá criar novas amizades, participar de eventos e até mesmo bater um papo comigo!\n\nEntre no meu canal [clicando aqui](https://www.youtube.com/channel/UCveCy4D7N_9wv49nDqhFvAw), aproveite para se inscrever e ativar o sininho de notificação para receber todos os meus vídeos!",
-      "url": "https://discordapp.com",
-      "color": 14427808,
-      "timestamp": "2018-12-30T05:39:43.479Z",
-      "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
-        "text": null
-      },
-      "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
-      },
-      "author": {
-        "name": "Suuck › Discord",
-        "url": "https://discordapp.com",
-        "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
-      }
-    }
-
-  })
   
-  var role = member.guild.roles.find(`name`, '👤Membro')
+  var role = member.guild.roles.find(`name`, '👥 Membro')
   member.addRole(role)
-  bot.channels.get("528251265382088704").send(`${member}`)
-  bot.channels.get("528251265382088704").send(embedbv)
 
 });
 
@@ -96,7 +72,7 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Suuck > Discord",
+        "name": "📋 Logs - " + server.name,
         "url": null,
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
@@ -123,7 +99,7 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - Suuck > Discord",
+        "name": "📋 Logs - " + server.name,
         "url": null,
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
@@ -153,14 +129,14 @@ bot.on("messageDelete", async message => {
         "text": "Autor: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - Suuck > Discord",
+        "name": "📋 Logs - " + server.name,
         "url": message.author.displayAvatarURL,
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
       "fields": [
         {
           "name": "Uma mensagem foi deletada.",
-          "value": "**Conteúdo:** " + message.content + "\n**Canal:** " + message.channel.name
+          "value": "**Canal:** " + message.channel.name + "\n**Conteúdo:** " + message.content
         }
       ]
     }

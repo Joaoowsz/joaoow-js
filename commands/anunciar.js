@@ -3,22 +3,22 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
 
-    if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("``❌`` Você não possui permissão para executar esse comando.");
+    if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("❌ | Você não possui permissão para executar esse comando.");
     let botmessage = args.slice(0).join(" ");
     if(!args[0]) return message.channel.send({
       "embed": {
-        "description": "**Qual tipo de anúncio deseja enviar?**\n\n**Sem imagem:** !anunciar <mensagem>\n **Com imagem:** !alertar <link-da-imagem> <mensagem>",
-        "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
+        "description": "**Use:** !anunciar <mensagem>",
+        "url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg",
         "color": 7671154,
         "timestamp": null,
         "text": null,
         "footer": {
-          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
         },
         "author": {
           "name": "Anúncios",
           "url": "https://discordapp.com",
-          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+          "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
         }
       }
     })
@@ -37,12 +37,12 @@ bot.channels.get("528254095614541854").send({
       "text": "Anúncio enviado por: " + message.author.username,
     },
     "thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/377876908622217226/525414332121612289/145.png"
+      "url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
     },
     "author": {
       "name": "Atenção:",
       "url": "https://discordapp.com",
-      "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+      "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
     }
   }
 })

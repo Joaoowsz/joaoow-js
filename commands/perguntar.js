@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
         "embed": {
             "description": "**Pergunta:** " + question + "\n**Resposta:** " + replies[result],
-            "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg",
+            "url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg",
             "color": 1146986,
             "timestamp": null,
             "footer": {
@@ -20,12 +20,12 @@ module.exports.run = async (bot, message, args) => {
               "text": "Autor da pergunta: " + message.author.username
             },
             "thumbnail": {
-              "url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+              "url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
             },
             "author": {
               "name": "Perguntas e Respostas",
               "url": "https://discordapp.com",
-              "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/528806154680139787/logo_suck.jpg"
+              "icon_url": "https://cdn.discordapp.com/attachments/521150947519496208/536773272285610020/jerrmuCB_400x400.jpg"
             }
           }
 
