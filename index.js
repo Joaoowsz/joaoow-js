@@ -28,7 +28,7 @@ bot.on("ready", async () => {
 
 });
 
-bot.on('guildMemberAdd', member => {
+bot.on('guildMemberAdd', guild, member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
 
   let entrouchat = channel.guild.channels.find(`name`, '👋entrada-saída')
@@ -39,9 +39,8 @@ bot.on('guildMemberAdd', member => {
 
 });
 
-bot.on('guildMemberRemove', member => {
+bot.on('guildMemberRemove', guild, member => {
   console.log('user ' + member.user.username + ' saiu do servidor!')
-
   let saiuchat = channel.guild.channels.find(`name`, '👋entrada-saída')
 
   saiuchat.send("➖ <@" + member.user.username + "> saiu do servidor.")
