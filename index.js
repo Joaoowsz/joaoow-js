@@ -30,6 +30,9 @@ bot.on("ready", async () => {
 
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.user.username + ' entrou no servidor!')
+
+  let entrouchat = channel.guild.channels.find(`name`, '👋entrada-saída')
+  entrouchat.send("➕ <@" + member.user.username + "> entrou no servidor.")
   
   var role = member.guild.roles.find(`name`, '👥 Membro')
   member.addRole(role)
@@ -39,10 +42,9 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberRemove', member => {
   console.log('user ' + member.user.username + ' saiu do servidor!')
 
-  var mutado = member.guild.roles.find(`name`, 'Mutado')
+  var saiuchat = channel.guild.channels.find(`name`, '👋entrada-saída')
 
-  if(!member.roles.get(mutado.id)) return;
-  bot.channels.get("528808778926391316").send(`Um usuário **mutado** saiu do servidor.\n**Usuário:** ${member}\n**ID:** ${member.id}`)
+  saiuchat.send("➖ <@" + member.user.username + "> saiu do servidor.")
 });
 
 
