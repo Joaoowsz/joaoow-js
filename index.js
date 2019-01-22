@@ -73,7 +73,7 @@ bot.on("channelCreate", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - " + server.name,
+        "name": "📋 Logs - Joaoow.js",
         "url": null,
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
@@ -100,7 +100,7 @@ bot.on("channelDelete", async channel => {
         "text": null
       },
       "author": {
-        "name": "📋 Logs - " + server.name,
+        "name": "📋 Logs - Joaoow.js",
         "url": null,
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
@@ -130,7 +130,7 @@ bot.on("messageDelete", async message => {
         "text": "Autor: " + message.author.tag
       },
       "author": {
-        "name": "📋 Logs - " + server.name,
+        "name": "📋 Logs - Joaoow.js",
         "url": message.author.displayAvatarURL,
         "icon_url": "https://cdn.discordapp.com/attachments/521157541905039360/521167240247246848/Discord.png"
       },
