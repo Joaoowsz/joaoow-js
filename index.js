@@ -42,7 +42,7 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberRemove', member => {
   console.log('user ' + member.user.username + ' saiu do servidor!')
 
-  var saiuchat = channel.guild.channels.find(`name`, '👋entrada-saída')
+  let saiuchat = channel.guild.channels.find(`name`, '👋entrada-saída')
 
   saiuchat.send("➖ <@" + member.user.username + "> saiu do servidor.")
 });
